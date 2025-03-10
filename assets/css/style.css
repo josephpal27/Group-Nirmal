@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: unset !important; /* Disable default smooth scrolling in Bootstrap */
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar Start */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 2rem 0.4rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.nav-left .logo img{
+    width: 80px;
+}
+.nav-left .line{
+   width: 1.5px;
+   height: 45px;
+   background-color: #d23737;
+}
+.nav-left .group-logo img{
+    width: 80px;
+}
+.nav-left button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: calc(0.9rem + 0.5vw);
+    color: #525252;
+    margin-left: 0.5rem;
+}
+.nav-left button img{
+    width: 30px;
+    margin-right: 5px;
+}
+.nav-right{
+    width: 50%;
+}
+/* Navbar End */
