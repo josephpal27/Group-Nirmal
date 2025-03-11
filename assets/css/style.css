@@ -107,6 +107,58 @@ nav{
     font-weight: 550;
     font-size: calc(0.5rem + 0.5vw);
 }
+
+@media screen and (max-width: 1229px){
+    .nav-menu{
+        padding: 2.5rem 2rem 1rem 2rem;
+    }
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    nav{
+        padding: 0.5rem 2rem 0.58rem 2rem;
+    }
+    .nav-menu{
+        width: 70%;
+        padding: 2.7rem 2rem 0.7rem 2rem;
+        left: 15%;
+    }
+    .nav-right .social-icons{
+        width: 20%;
+    }
+    .nav-right .social-icons img{
+        width: 23px;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    nav{
+        padding: 0.5rem 2rem 0.58rem 2rem;
+    }
+    .nav-left .logo img{
+        width: 88px;
+    }
+    .nav-right .social-icons{
+        width: 18%;
+    }
+    .nav-right .social-icons img{
+        width: 24px;
+    }
+    .nav-menu{
+        width: 70%;
+        padding: 2.7rem 2rem 1rem 2rem;
+        left: 15%;
+    }
+    .nav-menu .menu img{
+        width: 29px;
+        height: 29px;
+    }
+    .nav-menu .menu span{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
 /* Navbar End */
 
 /* Banner Start */
@@ -161,6 +213,7 @@ nav{
 .about-us{
     position: relative;
     margin-top: -0.5rem;
+    overflow: hidden;
 }
 .about-us video{
     width: 100%;
@@ -188,12 +241,11 @@ nav{
 }
 .about-us .count-row{
     position: absolute;
-    /* bottom: 0.45rem; */
-    bottom: -2.7rem;
-    left: 7.5%;
+    bottom: 0.45rem;
+    left: 8%;
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 84%;
 }
 .about-us .count-row .count-box{
     width: 25%;
@@ -217,6 +269,26 @@ nav{
     background-color: #fff;
     color: #366d96;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .about-us .about-desc{
+        padding: 3rem 4rem 3rem 4rem;
+        margin-top: 18rem;
+    }
+    .about-us .about-desc p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .about-us .count-row .count-box{
+        padding: 1.5rem 0;
+    }
+}
 /* About End */
 
 /* Chairman Start */
@@ -226,11 +298,12 @@ nav{
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    /* height: 100vh; */
 }
 .chairman-content{
     display: flex;
     justify-content: space-between;
-    padding: 10rem 1rem 7rem 1rem;
+    padding: 8.7rem 5%;
 }
 .chairman-content .chairman-msg{
     width: 62%;
@@ -268,6 +341,26 @@ nav{
     width: 100%;
     border: 5px solid #fff;
 }
+
+@media screen and (max-width: 1229px){
+    .chairman-content{
+        padding: 10rem 5.2%;
+    }
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .chairman-content{
+        padding: 10rem 0;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .chairman-content{
+        padding: 11rem 1.5% 10.5rem 1.5%;
+    }
+}
 /* Chairman End */
 
 /* Product Details Start */
@@ -276,7 +369,7 @@ nav{
     background-image: url('../images/product-details-bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 4rem 0.5rem;
+    padding: 4rem 7.5%;
 }
 .product-details h1{
     text-align: center;
@@ -302,7 +395,7 @@ nav{
     width: 100%;
 }
 .product-cards-row .product-card h2{
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     font-weight: 600;
     text-align: center;
 }
@@ -310,7 +403,7 @@ nav{
     text-align: start;
 }
 .product-cards-row .product-card p{
-    font-size: calc(0.42rem + 0.5vw);
+    font-size: calc(0.35rem + 0.5vw);
     text-align: center;
 }
 .product-cards-row .product-card i{
@@ -344,11 +437,32 @@ nav{
 .product-cards-row .product-card .layer-2.show {
     top: 0;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .product-details{
+        padding: 5rem 5%;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .product-details{
+        padding: 5rem 7%;
+    }
+    .product-cards-row .product-card h2{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .product-cards-row .product-card p{
+        font-size: calc(0.4rem + 0.5vw);
+        margin-top: 0.3rem;
+    }
+}
 /* Product Details End */
 
 /* Media Start */
 .media{
-    padding: 3rem 1rem 4rem 1rem;
+    padding: 3rem 5.6% 5rem 5.6%;
 }
 .media h1{
     text-align: center;
@@ -356,7 +470,7 @@ nav{
     font-size: calc(1.1rem + 1vw);
 }
 .media-boxes{
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
     display: flex;
     justify-content: space-between;
 }
@@ -415,29 +529,37 @@ nav{
 .media-boxes .media-aside h2{
     margin-top: 1rem;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .media{
+        padding: 4rem 1.2rem 5.5rem 1.2rem;
+    }
+    .media-boxes{
+        margin-top: 2rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .media{
+        padding: 4rem 1.5% 5.5rem 1.5%;
+    }
+    .media-boxes{
+        margin-top: 2rem;
+    }
+    .media-boxes .media-aside{
+        padding: 0.7rem;
+    }
+    .media-boxes .media-center .center-box{
+        padding: 0.7rem;
+    }
+}
 /* Media End */
 
 
-
-
-
-footer ul li{
-    margin-bottom: 0.5rem;
-  }
-  .contact-details .manufacturing-units li {
-    width: 25%;
-    padding: 0 0.75rem;
-  }
-  .contact-details .manufacturing-units li:not(:last-child) {
-    border-right: 1px dashed #366d96;
-  }
-  .contact-details .manufacturing-units li:nth-child(4) {
-    border-right: 0px dashed #366d96;
-  }
-  .contact-details .manufacturing-units li:nth-child(8) {
-    border-right: 0px dashed #366d96;
-  }
-  footer {
+/* Footer Start */
+footer{
     background-image: url(../../assets/images/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -447,23 +569,53 @@ footer ul li{
     font-size: 12px;
     position: relative;
     bottom: 0;
-  }
-  
-  footer h5 {
+}
+footer ul li{
+    margin-bottom: 0.5rem;
+}
+footer h5 {
     font-weight: 700;
     margin-bottom: 1rem;
     font-size: 13px;
-  }
-  footer a {
+}
+footer a {
     color: #fff;
     font-size: 0.75rem;
-  }
-  footer a:hover {
+}
+footer a:hover {
     color: #fff;
-  }
-  footer .social ul li {
+}
+footer .social ul li {
     width: 1.2rem;
-  }
-  footer .social ul li:not(:last-child) {
+}
+footer .social ul li:not(:last-child) {
     margin-right: 0.875rem;
-  }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    footer h5 {
+        font-size: 1rem;
+    }
+    footer a {
+        font-size: 0.85rem;
+    }
+    footer .social ul li {
+        width: 1.5rem;
+    }
+}
+/* Footer End */
+
+/* WhatsApp Icon Start */
+.wp{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+}
+.wp img{
+    width: 40px;
+}
+/* WhatsApp Icon End */
