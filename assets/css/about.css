@@ -1,0 +1,155 @@
+/* Banner Start */
+.about-banner{
+    width: 100%;
+    position: relative;
+}
+.about-banner img{
+    width: 100%;
+}
+.about-banner-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 1.7rem 8%;
+}
+.about-banner-layer .about-text{
+    width: 48%;
+    background-color: rgba(43, 129, 184, 0.8);
+    color: #fff;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
+}
+.about-banner-layer .about-text h1{
+    font-weight: 650;
+    font-size: calc(1.3rem + 1vw);
+}
+.about-banner-layer .about-text p{
+    margin: 0;
+    margin-top: 0.6rem;
+    font-size: calc(0.38rem + 0.5vw);
+    text-align: justify;
+}
+/* Banner End */
+
+/* Our Journey Start */
+
+/* Our Journey End */
+
+/* Brand Story Start */
+.brand-story{
+    width: 100%;
+    position: relative;
+}
+.brand-story img{
+    width: 100%;
+}
+.brand-story-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 7rem 8%;
+}
+.brand-story-layer h1{
+    font-weight: 650;
+    font-size: calc(1.5rem + 1vw);
+}
+.brand-story-layer .brand-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.2rem;
+}
+.brand-story-layer .brand-content .content{
+   width: 46.5%;
+}
+.brand-story-layer .brand-content .content p{
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 600;
+    text-align: justify;
+}
+/* Brand Story End */
+
+/* Chairman Start */
+.chairman-content{
+    padding: 6rem 5% 4rem 5%;
+}
+.chairman-content .chairman-msg p{
+    margin-top: 1rem;
+    font-size: calc(0.4rem + 0.5vw);
+}
+.chairman-content .chairman-msg .bottom{
+    margin-top: 1.5rem;
+}
+.chairman-content .chairman-msg .bottom p{
+    font-size: calc(0.8rem + 0.5vw);
+}
+.chairman-content .chairman-msg .bottom p:last-child{
+    font-size: calc(0.8rem + 0.5vw);
+}
+.chairman-content .chairman-img{
+    width: 29%;
+    margin-top: 3.8rem;
+}
+/* Chairman End */
+
+/* Vision Mission Start */
+.vision-mission{
+    background-image: url('../images/product-details-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 8% 4.8rem 8%; 
+}
+.vision-mission-container{
+    display: flex;
+    justify-content: space-between;
+}
+.vision-mission-box{
+    background-color: rgba(43, 129, 184, 0.8);
+    position: relative;
+    color: #fff;
+    width: 47%;
+    border-radius: 5px;
+    padding: 2rem;
+}
+.vision-mission-box .card-img{
+    position: absolute;
+    left: 35%;
+    background-color: #d9d9d9;
+    width: 30%;
+    margin: -6.7rem auto;
+    padding: 2.8rem;
+    border: 13px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.vision-mission-box .card-img img{
+    width: 100%;
+    scale: 1.7;
+}
+.vision-mission-box h1{
+    font-weight: 650;
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+    margin-top: 4rem;
+}
+.vision-mission-box h5{
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.5vw);
+    margin-top: 1.8rem;
+}
+.vision-mission-box p{
+    font-size: calc(0.5rem + 0.5vw);
+    margin-top: 1.2rem;
+}
+.vision-mission-box ul{
+    font-size: calc(0.5rem + 0.5vw);
+    margin-top: 1.2rem;
+    padding: 0;
+    padding-left: 1rem;
+}
+.vision-mission-box ul li{
+    margin-bottom: 0.6rem;
+}
+/* Vision Mission End */
