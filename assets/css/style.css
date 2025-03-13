@@ -512,7 +512,7 @@ nav{
     margin-bottom: 0;
 }
 .media-boxes button{
-    font-size: calc(0.35rem + 0.5vw);
+    font-size: calc(0.3rem + 0.5vw);
     font-weight: 500;
     border: none;
     background-color: #366d96;
