@@ -26,13 +26,13 @@
 
 /* Approvals Start */
  .approvals{
-    padding: 3rem 8%;
+    padding: 2.5rem 8% 3.5rem 8%;
 }
  .approvals h2{
     text-align: center;
     font-weight: 700;
     color: #396a91;
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.2rem + 1vw);
 }
 .approval-icons-row{
     display: flex;
@@ -53,27 +53,24 @@
 /* Product License Start */
 .license{
     padding: 1rem 8%;
-    display: flex;
-    justify-content: space-between;
 }
 .license-left{
-    width: 55%;
     padding: 1rem 0;
 }
 .license-right{
-    width: 43%;
     padding: 1rem 0;
 }
 .license h2{
-    font-size: calc(0.43rem + 1vw);
+    font-size: calc(1rem + 1vw);
     font-weight: 700;
     color: #396a91;
     text-transform: uppercase;
+    text-align: center;
 }
 .license .table{
     margin-top: 1.5rem;
     width: 100%;
-    font-size: calc(0.37rem + 0.5vw);
+    font-size: calc(0.45rem + 0.5vw);
     border-color: #366d96 !important;
 }
 .table thead th {
@@ -82,7 +79,7 @@
 }
 .table tbody tr th {
     background-color: #d9d9d9;
-    width: 22%;
+    width: 18%;
 }
 .table tbody tr th,
 .table tbody tr td {
@@ -95,10 +92,10 @@
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .license h2{
-        font-size: calc(0.52rem + 1vw);
+        font-size: calc(1rem + 1vw);
     }
     .license .table{
-        font-size: calc(0.39rem + 0.5vw);
+        font-size: calc(0.5rem + 0.5vw);
     }
 }
 /* Product License End */
