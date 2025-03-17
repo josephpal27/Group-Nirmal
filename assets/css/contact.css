@@ -139,6 +139,42 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.175) 0px 2px 7px;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .contact-box{
+        margin: 4.5rem 8% 4rem 8%;
+    }
+    .contact-box-left{
+        padding: 3.5rem 3.3rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .contact-box{
+        margin: 5rem 8% 4.2rem 8%;
+    }
+    .contact-box-left{
+        padding: 4.5rem 4rem;
+    }
+    .contact-box-left .contact-form form input{
+        margin-bottom: 0.8rem;
+        font-size: calc(0.48rem + 0.5vw);
+    }
+    .contact-box-left .contact-form form label{
+        font-size: calc(0.44rem + 0.5vw);
+    }
+    .contact-box-left .contact-form form textarea{
+        font-size: calc(0.48rem + 0.5vw);
+        margin-bottom: 0.8rem;
+        min-height: 8rem;
+        max-height: 11rem;
+    }
+    .contact-box-left .contact-form form button{
+        font-size: calc(0.48rem + 0.5vw);
+    }
+}
 /* Contact Box End */
 
 /* Corporate Office Start */
@@ -220,3 +256,9 @@
     font-weight: 430;
 }
 /* Manufacturing Units End */
+
+/* Footer Start */
+footer{
+    margin-top: 0.7rem;
+}
+/* Footer End */
