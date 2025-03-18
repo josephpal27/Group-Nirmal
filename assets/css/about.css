@@ -101,6 +101,11 @@
     font-weight: 600;
     line-height: 1.2;
   }
+  .our-journey .upper-layer .journey-content .right-side p:last-child {
+    font-size: calc(0.6rem + 0.5vw) !important;
+    font-weight: 600;
+    line-height: 1.2;
+  }
   .our-journey .journey-line-container {
     height: 20%;
     width: 100%;
@@ -253,6 +258,9 @@
         top: 7.2rem !important;
         left: -25px;
     }
+    .our-journey .upper-layer .journey-content .right-side p:last-child {
+        font-size: calc(0.7rem + 0.5vw) !important;
+      }
 }
 /* Our Journey End */
 

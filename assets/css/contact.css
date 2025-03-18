@@ -6,67 +6,37 @@
 .about-banner img{
     width: 100%;
 }
-.about-banner-layer{
+.banner-layer{
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    padding: 2rem 8%;
+    left: 0;
+    background: #1134529b;
 }
-.about-banner-layer .about-text{
-    width: 48%;
-    background-color: rgba(43, 129, 184, 0.8);
-    color: #fff;
-    overflow: hidden;
-    padding: 1.5rem 2rem;
-}
-.about-banner-layer .about-text h1{
+.about-banner h1{
     font-weight: 650;
-    font-size: calc(1.3rem + 1vw);
-    margin-bottom: 1.2rem;
-}
-.about-banner-layer .about-text p{
-    margin: 0;
-    margin-top: 0.65rem;
-    font-size: calc(0.37rem + 0.5vw);
-    text-align: justify;
+    font-size: calc(4rem + 1vw);
+    position: absolute;
+    bottom: 4rem;
+    left: 8%;
+    color: #fff;
 }
 
 @media screen and (max-width: 1220px){
     .about-banner{
         height: 88vh;
     }
-    .about-banner img{
-        height: 100%;
-    }
-    .about-banner-layer{
-        padding: 3.8rem 8%;
-    }
 }
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
-    .about-banner-layer{
-        padding: 3rem 8%;
-    }
-    .about-banner-layer .about-text p{
-        font-size: calc(0.4rem + 0.5vw);
-        margin-top: 0.7rem;
-    }
+   
 }
 
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
-    .about-banner-layer .about-text{
-        padding: 2.5rem 3rem;
-    }
-    .about-banner-layer{
-        padding: 3rem 8%;
-    }
-    .about-banner-layer .about-text p{
-        font-size: calc(0.42rem + 0.5vw);
-        margin-top: 0.72rem;
-    }
+    
 }
 /* Banner End */
 

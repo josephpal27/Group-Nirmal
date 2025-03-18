@@ -157,11 +157,13 @@
 }
 .assurance-card{
     width: 24%;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
+    
 }
 .assurance-card img{
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .assurance-card h3{
     font-size: calc(0.6rem + 0.5vw);
