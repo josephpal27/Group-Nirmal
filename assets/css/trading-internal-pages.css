@@ -128,6 +128,49 @@
     min-height: 1rem;
 }
 
+/* 5 Features Cards */
+.five-feature-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.five-feature-card-row .feature-card{
+    width: 33.3%;
+    padding: 0.7rem 1rem;
+}
+.five-feature-card-row .feature-card:nth-child(1),
+.five-feature-card-row .feature-card:nth-child(2),
+.five-feature-card-row .feature-card:nth-child(3){
+    border-bottom: 0.45rem solid #194b71;
+}
+.five-feature-card-row .feature-card:nth-child(4),
+.five-feature-card-row .feature-card:nth-child(5){
+    width: 50%;
+    padding-top: 1rem;
+}
+.five-feature-card-row .feature-card:nth-child(4){
+    border-right: 0.45rem solid #194b71;
+}
+.five-feature-card-row .feature-card .card-img{
+    height: 6rem;
+}
+.five-feature-card-row .feature-card:nth-child(1) img{
+    width: 16.5%;
+}
+.five-feature-card-row .feature-card:nth-child(3) img{
+    width: 9%;
+}
+.five-feature-card-row .feature-card:nth-child(4) img{
+    width: 11%;
+}
+.five-feature-card-row .feature-card:nth-child(5) img{
+    width: 12%;
+}
+.five-feature-card-row .feature-card h3{
+    margin-top: 0.3rem;
+    min-height: 0.8rem;
+}
+
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .feature-card .card-img{
@@ -146,6 +189,13 @@
     .six-feature-card-row .feature-card img{
         width: 17%;
     }
+    .five-feature-card-row .feature-card .card-img{
+        height: 7.5rem;
+    }
+    .five-feature-card-row .feature-card:nth-child(4),
+    .five-feature-card-row .feature-card:nth-child(5){
+        padding-top: 1.7rem;
+}
 }
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -157,6 +207,9 @@
     }
     .six-feature-card-row .feature-card img{
         width: 17%;
+    }
+    .five-feature-card-row .feature-card .card-img{
+        height: 8rem;
     }
 }
 /* Features End */
@@ -221,6 +274,7 @@
     text-align: center;
 }
 
+/* 5 Apps Row */
 .five-apps-row{
     display: flex;
     justify-content: center;
@@ -238,6 +292,18 @@
 }
 .five-apps-row .apps-card-outer p{
     font-size: calc(0.45rem + 0.5vw);
+}
+
+/* 6 Apps Row */
+.six-apps-row{
+    padding: 0 1rem;
+}
+.six-apps-row{
+    gap: 7%;
+}
+.six-apps-row .apps-card-outer{
+    width: 28%;
+    margin-bottom: 2rem;
 }
 
 /* For 100% in 15 inch screens */
@@ -258,6 +324,16 @@
     }
     .five-apps-row .apps-card-outer{
         margin-bottom: 3rem;
+    }
+
+    .six-apps-row{
+        margin-bottom: -1rem;
+    }
+    .six-apps-row .apps-card-outer{
+        margin-bottom: 1.9rem;
+    }
+    .six-apps-row .apps-card-outer h3{
+        margin-top: -1.3rem;
     }
 }
 /* Applications End */
@@ -382,6 +458,19 @@
     margin-top: 0.7rem;
 }
 
+.zinc-choose-us-card-row{
+    padding: 0;
+}
+.zinc-choose-us-card-row .choose-us-card{
+    width: 25%;
+}
+.zinc-choose-us-card-row .choose-us-card .card-img{
+    height: 6rem;
+}
+.zinc-choose-us-card-row .choose-us-card .card-img img{
+    width: 25%;
+}
+
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .choose-us-card .card-img{
@@ -396,6 +485,10 @@
     .choose-us-card p{
         font-size: calc(0.55rem + 0.5vw);
         margin-top: 0.7rem;
+    }
+
+    .zinc-choose-us-card-row .choose-us-card .card-img{
+        height: 7.3rem;
     }
 }
 /* Why Choose Us End */

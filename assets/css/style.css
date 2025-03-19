@@ -618,5 +618,33 @@ footer .social ul li:not(:last-child) {
 }
 .wp img{
     width: 40px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+}
+.wp img:hover{
+    scale: 1.1;
+    box-shadow: #48b14c 0px 5px 15px;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .wp{
+        width: 45px;
+        height: 45px;
+    }
+    .wp img{
+        width: 45px;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .wp{
+        width: 48px;
+        height: 48px;
+    }
+    .wp img{
+        width: 48px;
+    }
 }
 /* WhatsApp Icon End */
