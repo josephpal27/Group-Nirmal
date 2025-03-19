@@ -14,7 +14,7 @@
     background: #072137a1;
 }
 .banner-content{
-    width: 68%;
+    width: 100%;
     position: absolute;
     bottom: 3.5rem;
     left: 8%;
@@ -26,6 +26,7 @@
     text-transform: uppercase;
 }
 .banner-content p{
+    width: 70%;
     font-weight: 500;
     font-size: calc(0.55rem + 0.5vw);
     margin-top: 0.8rem;
@@ -92,6 +93,40 @@
     font-size: calc(0.48rem + 0.5vw);
     margin-top: 0.5rem;
 }
+/* 6 Feature Cards */
+.six-feature-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.six-feature-card-row .feature-card{
+    width: 33.3%;
+    padding: 0.7rem 1rem;
+}
+.six-feature-card-row .feature-card:nth-child(1),
+.six-feature-card-row .feature-card:nth-child(2),
+.six-feature-card-row .feature-card:nth-child(3){
+    border-bottom: 0.45rem solid #194b71;
+}
+.six-feature-card-row .feature-card:nth-child(2),
+.six-feature-card-row .feature-card:nth-child(5){
+    border-right: 0.45rem solid #194b71;
+    border-left: 0.45rem solid #194b71;
+    padding: 0.7rem 0.5rem;
+}
+.six-feature-card-row .feature-card .card-img{
+    height: 6rem;
+}
+.six-feature-card-row .feature-card img{
+    width: 18%;
+}
+.six-feature-card-row .feature-card:nth-child(4) .card-img img{
+    width: 9%;
+}
+.six-feature-card-row .feature-card h3{
+    margin-top: 0.3rem;
+    min-height: 1rem;
+}
 
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
@@ -104,6 +139,24 @@
     }
     .feature-card p{
         font-size: calc(0.55rem + 0.5vw);
+    }
+    .six-feature-card-row .feature-card .card-img{
+        height: 8.2rem;
+    }
+    .six-feature-card-row .feature-card img{
+        width: 17%;
+    }
+}
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .six-feature-card-row .feature-card{
+        padding: 0.7rem 1rem !important;
+    }
+    .six-feature-card-row .feature-card .card-img{
+        height: 6.7rem;
+    }
+    .six-feature-card-row .feature-card img{
+        width: 17%;
     }
 }
 /* Features End */
@@ -168,6 +221,25 @@
     text-align: center;
 }
 
+.five-apps-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+.five-apps-row .apps-card-outer{
+    width: 30%;
+    margin-bottom: 2.5rem;
+}
+.five-apps-row .apps-card-layer{
+    padding: 0.7rem;
+}
+.five-apps-row .apps-card-outer p{
+    font-size: calc(0.45rem + 0.5vw);
+}
+
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .apps-row{
@@ -179,6 +251,13 @@
     .apps-card-outer h3{
         font-size: calc(0.95rem + 0.5vw);
         margin-top: -0.5rem;
+    }
+
+    .five-apps-row{
+        margin-top: 2.5rem;
+    }
+    .five-apps-row .apps-card-outer{
+        margin-bottom: 3rem;
     }
 }
 /* Applications End */
