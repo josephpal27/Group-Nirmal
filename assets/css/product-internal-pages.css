@@ -111,6 +111,24 @@
     border-right: 0.3rem solid #164b74;
 }
 /* -- 6 Feature -- */
+.six-feature-row .feature-card{
+    width: 33.3%;
+    padding: 0 1rem;
+}
+.six-feature-row .feature-card:nth-child(3){
+    border-bottom: 0.3rem solid #164b74;
+    border-left: 0.3rem solid #164b74;
+    border-right: none;
+}
+.six-feature-row .feature-card:nth-child(4){
+    border-right: 0.3rem solid #164b74;
+}
+.six-feature-row .feature-card:nth-child(6){
+    border-left: 0.3rem solid #164b74;
+}
+.six-feature-row .feature-card .card-img img{
+    width: 29%;
+}
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -177,7 +195,7 @@
    text-align: center;
    text-transform: uppercase;
    font-weight: 700;
-   font-size: calc(0.6rem + 0.5vw);
+   font-size: calc(0.5rem + 0.5vw);
 }
 .apps-card .blue-layer p{
    text-align: justify;
@@ -189,6 +207,9 @@
 @media screen and (min-width: 1400px) {
     .apps-card .blue-layer p{
         font-size: calc(0.25rem + 0.5vw);
+    }
+    .apps-card .blue-layer h4{
+        font-size: calc(0.57rem + 0.5vw);
      }
 }
 /* Applications End */
