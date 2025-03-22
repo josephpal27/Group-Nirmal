@@ -15,7 +15,7 @@
     color: #fff;
 }
 .banner-content h1{
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2.5rem + 1vw);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -28,8 +28,17 @@
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
+    .banner-content h1{
+        font-size: calc(2.8rem + 1vw);
+    }
     .banner-content p{
         max-width: 73%;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner-content h1{
+        font-size: calc(3rem + 1vw);
     }
 }
 /* Banner End */
