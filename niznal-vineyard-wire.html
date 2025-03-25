@@ -220,6 +220,33 @@
     </section> 
     <!-- Applications End -->
 
+    <!-- Vineyard Support System Start -->
+    <section class="vineyard-support-system">
+        <h1 data-aos="zoom-in" data-aos-duration="1000">NIZNAL<sup>®</sup> Vineyard Support Systems</h1>
+        <p data-aos="fade" data-aos-duration="1000">Vineyard support systems are essential structures that provide a framework for grapevines to grow and bear fruit. They are crucial for maximising sunlight exposure, improving air circulation, and facilitating efficient vineyard management. These typically consist of posts, wires, and stakes that support the vines, preventing them from sprawling on the ground and becoming susceptible to diseases and pests. Grape farmers use these support systems to optimise grape quality and yield.</p>
+
+        <!-- Card Row -->
+        <div class="support-card-row">
+            <!-- Card 1 -->
+            <div class="support-card" data-aos="fade" data-aos-duration="1000">
+                <img src="assets/images/y-support-system.png" alt="image">
+                <div class="support-card-layer">
+                    <h4>Y Support system</h4>
+                    <p>The NIZNAL<sup>®</sup> Y Vineyard Support system is a durable Y-shaped configuration that uses high-quality, corrosion-resistant wires to provide optimal support for grapevines. This system enhances vineyard organization, promotes fruit development, facilitates harvesting, increases yield, and improves air circulation for healthier vines and better fruit quality.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="support-card" data-aos="fade" data-aos-duration="1000">
+                <img src="assets/images/mandap-system.png" alt="image">
+                <div class="support-card-layer">
+                    <h4>Mandap System</h4>
+                    <p>The NIZNAL<sup>®</sup>  Mandap Support System is a durable, grid-like vineyard wire structure designed for high-density vineyards. It supports mature vines and withstands harsh weather. Its customizable design, using various wire gauges, accommodates different vine training systems and growing conditions. This system enhances grape quality and yield by providing consistent support and optimal airflow.</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Vineyard Support System End -->
+
     <!-- Quality Start -->
     <section class="quality">
         <h1 data-aos="zoom-in" data-aos-duration="1000">QUALITY ASSURANCE</h1>
@@ -426,6 +453,20 @@
             })
             card.addEventListener('mouseleave', () => {
                 blueLayer[index].style.bottom = '-100%';
+            })
+        })
+    </script>
+
+    <!-- Support Card Hover Functionality -->
+    <script>
+        let supportCard = document.querySelectorAll('.support-card-row .support-card');
+        let SupportCardLayer = document.querySelectorAll('.support-card-row .support-card-layer');
+        supportCard.forEach((card, index) => {
+            card.addEventListener('mouseenter', () => {
+                SupportCardLayer[index].style.bottom = '0';
+            })
+            card.addEventListener('mouseleave', () => {
+                SupportCardLayer[index].style.bottom = '-100%';
             })
         })
     </script>

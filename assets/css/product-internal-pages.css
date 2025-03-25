@@ -364,3 +364,69 @@
     }
 }
 /* After Sale End */
+
+/* Vineyard Support System Start */
+.vineyard-support-system{
+    padding: 0.6rem 8% 0.5rem 8%;
+}
+.vineyard-support-system h1{
+    font-size: calc(1.9rem + 0.5vw);
+    font-weight: 700;
+    text-align: center;
+    color: #386d94;
+    text-transform: uppercase;
+}
+.vineyard-support-system p{
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+    margin: 0.8rem auto;
+    width: 100%;
+    text-align: center;
+}
+.vineyard-support-system .support-card-row{
+    width: 82%;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.vineyard-support-system .support-card-row .support-card{
+    width: 47%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.vineyard-support-system .support-card-row .support-card img{
+    width: 100%;
+}
+.vineyard-support-system .support-card-row .support-card .support-card-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    background-color: #042741d0;
+    padding: 1.2rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.vineyard-support-system .support-card-row .support-card .support-card-layer h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: calc(0.9rem + 0.5vw);
+    color: #fff;
+}
+.vineyard-support-system .support-card-row .support-card .support-card-layer p{
+    color: #fff;
+    text-align: justify;
+    font-weight: 500;
+    font-size: calc(0.45rem + 0.5vw);
+    margin-top: 1rem;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .vineyard-support-system .support-card-row .support-card .support-card-layer{
+        padding: 1.5rem 1.5rem;
+    }
+}
+/* Vineyard Support System End */
