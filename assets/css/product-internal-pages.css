@@ -25,6 +25,14 @@
     max-width: 70%;
     margin-top: 1rem;
 }
+.banner-logo{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.banner-logo img{
+    width: 180px;
+}
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -34,11 +42,17 @@
     .banner-content p{
         max-width: 73%;
     }
+    .banner-logo img{
+        width: 200px;
+    }
 }
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .banner-content h1{
         font-size: calc(3rem + 1vw);
+    }
+    .banner-logo img{
+        width: 210px;
     }
 }
 /* Banner End */
