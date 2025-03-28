@@ -94,6 +94,15 @@
 .blog-content p .grey{
     color: #606060;
 }
+.blog-content ul li{
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.blog-content ul li::marker {
+    color: #386d94;
+}
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -115,6 +124,10 @@
         font-size: calc(0.6rem + 0.5vw);
         margin-bottom: 1.3rem;
     }
+    .blog-content ul li{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-bottom: 1.3rem;
+    }
 }
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
@@ -133,6 +146,10 @@
         margin-top: 1.5rem;
     }
     .blog-content p{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-bottom: 1.5rem;
+    }
+    .blog-content ul li{
         font-size: calc(0.65rem + 0.5vw);
         margin-bottom: 1.5rem;
     }
