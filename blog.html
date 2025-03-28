@@ -453,18 +453,18 @@
             slidesPerView: 1, // Number of slides visible at a time
             spaceBetween: 30, // Space between slides
             navigation: {
-                nextEl: '.swiper-button-next', // Next arrow
-                prevEl: '.swiper-button-prev', // Prev arrow
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             pagination: {
-                el: '.swiper-pagination', // Pagination container
-                clickable: true, // Allow clicking on pagination bullets
+                el: '.swiper-pagination',
+                clickable: true,
                 renderBullet: function (index, className) {
                     return `<span class="${className}">${index + 1}</span>`; // Render pagination as numbers
                 },
             },
-            loop: false, // Disable looping
-            autoplay: false, // Disable autoplay
+            loop: false,
+            autoplay: false,
         });
     </script>
 
