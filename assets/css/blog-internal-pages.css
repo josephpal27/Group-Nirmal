@@ -63,7 +63,7 @@
 
 /* Blog Content Start */
 .blog-content{
-    padding: 0.5rem 8%;
+    padding: 3rem 8% 0.5rem 8%;
 }
 .blog-content h2{
     font-size: calc(2rem + 0.5vw);
@@ -72,16 +72,20 @@
     margin-bottom: 0.7rem;
 }
 .blog-content h3{
-    font-size: calc(1.5rem + 0.5vw);
+    font-size: calc(1.3rem + 0.5vw);
     font-weight: 650;
     color: #386d94;
     margin-bottom: 0.7rem;
+    margin-top: 1.5rem;
 }
 .blog-content p{
     font-size: calc(0.55rem + 0.5vw);
     font-weight: 500;
     color: #000;
     margin-bottom: 1rem;
+}
+.blog-content p .grey{
+    color: #606060;
 }
 
 /* For 110% in 15 inch screens */
@@ -91,8 +95,9 @@
         margin-bottom: 0.8rem;
     }
     .blog-content h3{
-        font-size: calc(1.6rem + 0.5vw);
+        font-size: calc(1.4rem + 0.5vw);
         margin-bottom: 1rem;
+        margin-top: 1.8rem;
     }
     .blog-content p{
         font-size: calc(0.6rem + 0.5vw);
@@ -106,8 +111,9 @@
         margin-bottom: 1.1rem;
     }
     .blog-content h3{
-        font-size: calc(1.7rem + 0.5vw);
+        font-size: calc(1.5rem + 0.5vw);
         margin-bottom: 1rem;
+        margin-top: 2rem;
     }
     .blog-content p{
         font-size: calc(0.65rem + 0.5vw);
