@@ -77,7 +77,11 @@
     background-color: transparent;
     border: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.blog-card button:hover{
+    transform: translateX(5px);
 }
 .blog-card button img{
     width: 12px;
