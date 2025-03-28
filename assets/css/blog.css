@@ -24,7 +24,7 @@
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .banner-layer h1{
-        font-size: calc(4.3rem + 1vw);
+        font-size: calc(4.4rem + 1vw);
     }
 }
 /* For 100% in 15 inch screens */
