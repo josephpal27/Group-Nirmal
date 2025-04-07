@@ -52,16 +52,19 @@
 .product-row .product-card{
     width: 32%;
     cursor: pointer;
+    padding: 1rem;
 }
 .product-row .product-card img{
     width: 100%;
     transition: all 0.3s ease;
+    /* padding: 1.2rem; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .product-row .product-card img:hover{
     scale: 1.02;
 }
 .product-row .product-card .card-desc{
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 2rem 0 0 0;
     text-align: center;
 }
 .product-row .product-card .card-desc h2{
@@ -109,7 +112,7 @@
         width: 31%;
     }
     .product-row .product-card .card-desc{
-        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        padding: 2.5rem 1rem 0.5rem 1rem;
     }
     .product-row .product-card .card-desc h2{
         font-size: calc(1rem + 0.5vw);

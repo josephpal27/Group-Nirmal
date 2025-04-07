@@ -160,10 +160,15 @@
     text-transform: uppercase;
     padding-bottom: 0.5rem;
 }
+.corporate-office .corp-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
 .corporate-office .corp-card{
+    width: 43%;
     border: 1px dashed #194b70;
     margin-top: 0.8rem;
-    width: max-content;
     padding: 1rem;
 }
 .corporate-office .corp-card h2{
@@ -200,7 +205,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5%;
-    margin-top: 0.8rem;
+    margin-top: 1.3rem;
 }
 .manufacturing-card-row .manufacturing-card{
     width: 23.85%;
