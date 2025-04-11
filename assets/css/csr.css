@@ -31,18 +31,59 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.csr-buttons-row a{
+.csr-buttons-row button{
     width: 48.5%;
-}
-.csr-buttons-row a button{
-    width: 100%;
     margin-bottom: 1.3rem;
     background-color: #366d96;
     color: #fff;
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     border: none;
     border-radius: 7px;
-    font-size: calc(0.55rem + 0.5vw);
-    font-weight: 500;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 550;
+    transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+.csr-buttons-row button:hover{
+    box-shadow: #366c96bc 0px 3px 8px;
+    background-color: #26577c;
 }
 /* CSR Buttons End */
+
+/* CSR Box Start */
+.csr-content{
+    margin: 0 8%;
+    padding: 2rem 0;
+}
+.csr-content h1{
+    text-align: center;
+    color: #366d96;
+    font-size: calc(1.5rem + 0.5vw);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.csr-image-box{
+    margin-top: 2rem;
+}
+.csr-image-box .top-image-box,
+.csr-image-box .bottom-image-box{
+    display: flex;
+    justify-content: space-between;
+}
+.csr-image-box .bottom-image-box{
+    margin-top: 1.2rem;
+}
+.csr-image-box img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 5px 15px;
+}
+
+/* Three Images Box */
+#three-images .top-image-box .img-box{
+    width: 100%;
+}
+#three-images .bottom-image-box .img-box{
+    width: 49%;
+}
+
+/* CSR Box End */
