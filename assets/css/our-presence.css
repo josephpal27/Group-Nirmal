@@ -1,0 +1,137 @@
+/* Banner Start */
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #072137b3;
+}
+.banner-content{
+    width: 67%;
+    position: absolute;
+    bottom: 3rem;
+    left: 8%;
+    color: #fff;
+}
+.banner-content h1{
+    font-weight: 650;
+    font-size: calc(4rem + 1vw);
+}
+.banner-content p{
+    font-weight: 500;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 0.8rem;
+}
+/* Banner End */
+
+/* Gallery Start */
+.gallery{
+    padding: 1.5rem 1rem;
+    margin: 3.5rem 8% 1.5rem 8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
+    border-radius: 5px;
+}
+.gallery h1{
+    text-align: center;
+    color: #1d5179;
+    font-weight: 700;
+    font-size: calc(1.7rem + 0.5vw);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+} 
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+.pagination button {
+    width: 45px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: calc(0.5rem + 0.5vw);
+}
+.pagination #prev-btn,
+.pagination #next-btn{
+    font-size: calc(0.9rem + 0.5vw);
+}
+.pagination button:hover {
+    background-color: #1d5179;
+    color: #fff;
+} 
+.pagination button.active {
+    background-color: #1d5179;
+    color: #fff;
+}
+/* Gallery End */
+
+/* Media Start */
+.media{
+    overflow: hidden;
+    position: relative;
+}
+
+.media .swiper-button-prev,
+.media .swiper-button-next {
+    position: absolute;
+    top: 97%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    background-color: #366d96;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.media .swiper-button-prev span,
+.media .swiper-button-next span{
+    margin-top: -3px;
+    user-select: none;
+}
+.media .swiper-button-next::after,
+.media .swiper-button-prev::after{
+    display: none;
+}
+.media .swiper-button-prev:hover,
+.media .swiper-button-next:hover {
+    background-color: #22567e;
+}
+.media .swiper-button-prev {
+    left: calc(51% - 60px); /* Position the previous button to the left of the center */
+}
+.media .swiper-button-next {
+    right: calc(51% - 60px); /* Position the next button to the right of the center */
+}
+/* Media End */
+
+/* Footer Start */
+footer{
+    margin-top: 4rem;
+}
+/* Footer End */
