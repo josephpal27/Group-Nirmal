@@ -1,0 +1,48 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner h1{
+    position: absolute;
+    bottom: 4rem;
+    left: 8%;
+    color: #fff;
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner h1{
+        bottom: 4rem;
+        font-size: calc(4.7rem + 1vw);
+    }
+}
+/* Banner End */
+
+/* CSR Buttons Start */
+.csr-buttons-row{
+    padding: 3.5rem 8% 2rem 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.csr-buttons-row a{
+    width: 48.5%;
+}
+.csr-buttons-row a button{
+    width: 100%;
+    margin-bottom: 1.3rem;
+    background-color: #366d96;
+    color: #fff;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 7px;
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 500;
+}
+/* CSR Buttons End */
