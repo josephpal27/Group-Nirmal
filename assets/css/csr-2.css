@@ -1,0 +1,120 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner h1{
+    position: absolute;
+    bottom: 4rem;
+    left: 8%;
+    color: #fff;
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner h1{
+        bottom: 4rem;
+        font-size: calc(4.7rem + 1vw);
+    }
+}
+/* Banner End */
+
+/* CSR Content Start */
+.csr-content{
+    padding: 3rem 8%;
+}
+.csr-content p{
+    margin: 0;
+    font-size: calc(0.55rem + 0.5vw);
+}
+.csr-content h2{
+    margin: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    color: #366d96;
+    font-size: calc(1.4rem + 0.5vw);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.csr-content h3{
+    margin: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 0.7rem;
+    color: #366d96;
+    font-size: calc(1rem + 0.5vw);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.para-box{
+    position: relative;
+}
+.para-box p{
+    border: 1.5px solid #000;
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+.para-box p span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444444;
+}
+.para-box .colon{
+    background-color: #fff;
+    padding: 0.8rem;
+    position: absolute;
+}
+.para-box img{
+    width: 20px;
+}
+.para-box #colon-1{
+    top: -20px;
+    left: -20px;
+}
+.para-box #colon-2{
+    bottom: -18px;
+    right: -20px;
+}
+.csr-content h4{
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 700;
+}
+.csr-content .text-box{
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1.3rem;
+}
+.csr-content .text-box button{
+    background-color: #366d96;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    font-size: calc(0.4rem + 0.5vw);
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+.csr-content .text-box button:hover{
+    background-color: #295a80;
+    box-shadow: #366c96bc 0px 2px 7px;
+}
+/* CSR Content End */
+
+/* Footer Start */
+footer{
+    margin-top: 2rem;
+}
+/* Footer End */
