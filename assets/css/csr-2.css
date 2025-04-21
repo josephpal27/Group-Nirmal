@@ -111,6 +111,113 @@
     background-color: #295a80;
     box-shadow: #366c96bc 0px 2px 7px;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .csr-content{
+        padding: 3.5rem 8%;
+    }
+    .csr-content p{
+        font-size: calc(0.67rem + 0.5vw);
+    }
+    .csr-content h2{
+        margin-top: 2.8rem;
+        margin-bottom: 1rem;
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .csr-content h3{
+        margin-top: 2.6rem;
+        margin-bottom: 0.9rem;
+        font-size: calc(1.18rem + 0.5vw);
+    }
+    .para-box p{
+        border: 1.7px solid #000;
+        margin-top: 2rem;
+        padding: 1.3rem 3rem;
+    }
+    .para-box .colon{
+        padding: 1rem;
+    }
+    .para-box img{
+        width: 24px;
+    }
+    .para-box #colon-1{
+        top: -22px;
+        left: -20px;
+    }
+    .para-box #colon-2{
+        bottom: -20px;
+        right: -20px;
+    }
+    .csr-content h4{
+        margin-top: 3.3rem;
+        margin-bottom: 1rem;;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .csr-content .text-box{
+        border: 1.7px solid #000;
+        padding: 1.2rem;
+        margin-top: 1.3rem;
+    }
+    .csr-content .text-box button{
+        padding: 0.35rem 1rem;
+        font-size: calc(0.45rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .csr-content{
+        padding: 3.6rem 8%;
+    }
+    .csr-content p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .csr-content h2{
+        margin-top: 2.9rem;
+        margin-bottom: 1.2rem;
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .csr-content h3{
+        margin-top: 3.3rem;
+        margin-bottom: 1.2rem;
+        font-size: calc(1.25rem + 0.5vw);
+    }
+    .para-box p{
+        border: 1.9px solid #000;
+        margin-top: 2.5rem;
+        padding: 1.3rem 3rem;
+    }
+    .para-box .colon{
+        padding: 1.3rem;
+    }
+    .para-box img{
+        width: 27px;
+    }
+    .para-box #colon-1{
+        top: -22px;
+        left: -22px;
+    }
+    .para-box #colon-2{
+        bottom: -20px;
+        right: -22px;
+    }
+    .csr-content h4{
+        margin-top: 3.4rem;
+        margin-bottom: 1.5rem;;
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .csr-content .text-box{
+        border: 1.9px solid #000;
+        padding: 1.4rem;
+        margin-top: 1.4rem;
+    }
+    .csr-content .text-box button{
+        padding: 0.4rem 1rem;
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 1.3rem;
+    }
+}
 /* CSR Content End */
 
 /* Footer Start */
