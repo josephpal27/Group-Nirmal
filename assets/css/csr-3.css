@@ -1,0 +1,77 @@
+/* Banner Start */
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner .banner-text{
+    position: absolute;
+    bottom: 3.5rem;
+    left: 8%;
+    color: #fff;
+}
+.banner h1{
+    font-size: calc(4rem + 1vw);
+    font-weight: 700;
+}
+.banner p{
+    font-weight: 500;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 1rem;
+    width: 90%;
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .banner h1{
+        bottom: 4rem;
+        font-size: calc(4.7rem + 1vw);
+    }
+}
+/* Banner End */
+
+/* Top Text Start */
+.top-text{
+    padding: 3rem 8%;
+}
+.top-text h2{
+    margin: 0;
+    text-align: center;
+    color: #366d96;
+    font-size: calc(1.4rem + 0.5vw);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.top-text p{
+    margin: 0;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 0.8rem;
+}
+/* Top Text End */
+
+/* CSR Tabs Start */
+.csr-tabs{
+    padding: 0 8% 3rem 8%;
+}
+.csr-tabs .csr-tab-head{
+    border-bottom: 1.2px solid #bebebe;
+}
+.csr-tabs .csr-tab-head button{
+    background-color: transparent !important;
+    color: #000 !important;
+    font-weight: 450 !important;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+.csr-tabs .csr-tab-head button:last-child{
+    margin-right: 0;
+}
+.csr-tabs .csr-tab-head button.active{
+    font-weight: 800 !important;
+    border-bottom: 3px solid #366d96;
+}
+/* CSR Tabs End */
