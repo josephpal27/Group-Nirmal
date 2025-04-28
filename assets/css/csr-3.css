@@ -74,4 +74,157 @@
     font-weight: 800 !important;
     border-bottom: 3px solid #366d96;
 }
+
+.csr-tab-body .csr-tab-content-head{
+    border: 1.5px solid #000;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    position: relative;
+}
+.csr-tab-body .csr-tab-content-head p{
+    margin: 0;
+    font-size: calc(0.55rem + 0.5vw);
+}
+.csr-tab-body .csr-tab-content-head .colon{
+    background-color: #fff;
+    padding: 0.8rem;
+    position: absolute;
+}
+.csr-tab-body .csr-tab-content-head img{
+    width: 20px;
+}
+.csr-tab-body .csr-tab-content-head #colon-1{
+    top: -20px;
+    left: -20px;
+}
+.csr-tab-body .csr-tab-content-head #colon-2{
+    bottom: -18px;
+    right: -20px;
+}
+
+.csr-tab-body .csr-card-row{
+    margin-top: 1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+}
+.csr-tab-body .csr-card{
+    width: 31.6%;
+    cursor: pointer;
+}
+.csr-tab-body .csr-card:hover{
+    background-color: #efefef;
+}
+.csr-tab-body .csr-card{
+    position: relative;
+}
+.csr-tab-body .csr-card img{
+    width: 100%;
+}
+.csr-tab-body .csr-card .arrow-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #356d97;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.csr-tab-body .csr-card .arrow-box img{
+    width: 16px;
+}
+.csr-tab-body .csr-card:hover .arrow-box{
+    display: flex;
+}
+.csr-tab-body .csr-card h3{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 650;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+}
 /* CSR Tabs End */
+
+/* Modal Start */
+#tabModal #tabModalLabel{
+    font-weight: 650;
+    font-size: calc(1.1rem + 0.5vw) !important;
+}
+#tabModal .modal-body{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+#tabModal .modal-body .modal-image-slider{
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3rem;
+}
+#tabModal .modal-body .modal-image-slider img{
+    width: 100%;
+    margin-top: 6px;
+}
+#tabModal .modal-body .modal-text-content{
+    width: 52%;
+}
+#tabModal .modal-body .modal-text-content p{
+    font-size: calc(0.55rem + 0.5vw);
+    margin: 0;
+    color: #000;
+    font-weight: 450;
+}
+#tabModal .modal-dialog {
+    max-width: 70%; /* Default width for modal */
+}
+
+.modal-image-slider .swiper-button-next::after,
+.modal-image-slider .swiper-button-prev::after{
+    display: none;
+}
+.modal-image-slider .swiper-button-prev,
+.modal-image-slider .swiper-button-next {
+    position: absolute;
+    top: 97%;
+    width: 25px;
+    height: 25px;
+    font-size: 1.5rem;
+    background-color: #366d96;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.modal-image-slider .swiper-button-prev span,
+.modal-image-slider .swiper-button-next span{
+    margin-top: -3px;
+    user-select: none;
+}
+.modal-image-slider .swiper-pagination-bullet {
+    width: 30px;
+    height: 5px;
+    background-color: #858585;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.1s ease;
+}
+
+.modal-image-slider .swiper-pagination-bullet-active {
+    background-color: #366d96;
+}
+/* Modal End */
+
+/* Footer Start */
+footer{
+    margin-top: 2rem;
+}
+/* Footer End */
