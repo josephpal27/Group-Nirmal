@@ -29,6 +29,10 @@
         bottom: 4rem;
         font-size: calc(4.7rem + 1vw);
     }
+    .banner p{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 1rem;
+    }
 }
 /* Banner End */
 
@@ -48,6 +52,33 @@
     margin: 0;
     font-size: calc(0.55rem + 0.5vw);
     margin-top: 0.8rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .top-text{
+        padding: 3.5rem 8%;
+    }
+    .top-text h2{
+        font-size: calc(1.5rem + 0.5vw);
+    }
+    .top-text p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .top-text{
+        padding: 3.8rem 8%;
+    }
+    .top-text h2{
+        font-size: calc(1.65rem + 0.5vw);
+    }
+    .top-text p{
+        font-size: calc(0.68rem + 0.5vw);
+        margin-top: 1rem;
+    }
 }
 /* Top Text End */
 
@@ -148,6 +179,115 @@
     padding: 0 0.5rem;
     text-transform: uppercase;
 }
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .csr-tabs .csr-tab-head{
+        border-bottom: 1.3px solid #bebebe;
+    }
+    .csr-tabs .csr-tab-head button{
+        border-bottom: 3.5px solid transparent;
+        margin-right: 1.3rem;
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .csr-tabs .csr-tab-head button.active{
+        border-bottom: 3.5px solid #366d96;
+    }
+
+    .csr-tab-body .csr-tab-content-head{
+        border: 1.7px solid #000;
+        padding: 1.5rem 3.5rem;
+        margin-top: 2.3rem;
+    }
+    .csr-tab-body .csr-tab-content-head p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .csr-tab-body .csr-tab-content-head .colon{
+        padding: 1rem;
+    }
+    .csr-tab-body .csr-tab-content-head img{
+        width: 24px;
+    }
+    .csr-tab-body .csr-tab-content-head #colon-1{
+        top: -20px;
+        left: -28px;
+    }
+    .csr-tab-body .csr-tab-content-head #colon-2{
+        bottom: -18px;
+        right: -28px;
+    }
+
+    .csr-tab-body .csr-card-row{
+        margin-top: 1.9rem;
+    }
+    .csr-tab-body .csr-card .arrow-box{
+        width: 45px;
+        height: 45px;
+    }
+    .csr-tab-body .csr-card .arrow-box img{
+        width: 18px;
+    }
+    .csr-tab-body .csr-card h3{
+        margin-top: 1.2rem;
+        margin-bottom: 1.3rem;
+        font-size: calc(0.7rem + 0.5vw);
+        padding: 0 0.6rem;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .csr-tabs .csr-tab-head{
+        border-bottom: 1.5px solid #bebebe;
+    }
+    .csr-tabs .csr-tab-head button{
+        border-bottom: 3.9px solid transparent;
+        margin-right: 1.8rem;
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .csr-tabs .csr-tab-head button.active{
+        border-bottom: 3.9px solid #366d96;
+    }
+
+    .csr-tab-body .csr-tab-content-head{
+        border: 1.8px solid #000;
+        padding: 1.8rem 3.5rem;
+        margin-top: 2.5rem;
+    }
+    .csr-tab-body .csr-tab-content-head p{
+        font-size: calc(0.68rem + 0.5vw);
+    }
+    .csr-tab-body .csr-tab-content-head .colon{
+        padding: 1.2rem;
+    }
+    .csr-tab-body .csr-tab-content-head img{
+        width: 26px;
+    }
+    .csr-tab-body .csr-tab-content-head #colon-1{
+        top: -22px;
+        left: -32px;
+    }
+    .csr-tab-body .csr-tab-content-head #colon-2{
+        bottom: -20px;
+        right: -32px;
+    }
+
+    .csr-tab-body .csr-card-row{
+        margin-top: 2.2rem;
+    }
+    .csr-tab-body .csr-card .arrow-box{
+        width: 48px;
+        height: 48px;
+    }
+    .csr-tab-body .csr-card .arrow-box img{
+        width: 20px;
+    }
+    .csr-tab-body .csr-card h3{
+        margin-top: 1.3rem;
+        margin-bottom: 1.4rem;
+        font-size: calc(0.77rem + 0.5vw);
+        padding: 0 0.65rem;
+    }
+}
 /* CSR Tabs End */
 
 /* Modal Start */
@@ -220,6 +360,46 @@
 
 .modal-image-slider .swiper-pagination-bullet-active {
     background-color: #366d96;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    #tabModal .modal-body .modal-text-content p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .modal-image-slider .swiper-button-prev,
+    .modal-image-slider .swiper-button-next {
+        top: 97.2%;
+        width: 27px;
+        height: 27px;
+        font-size: 1.6rem;
+    }
+    .modal-image-slider .swiper-pagination-bullet {
+        width: 40px;
+        height: 5px;
+        margin: 0 13px;
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    #tabModal #tabModalLabel{
+        font-size: calc(1.2rem + 0.5vw) !important;
+    }
+    #tabModal .modal-body .modal-text-content p{
+        font-size: calc(0.68rem + 0.5vw);
+    }
+    .modal-image-slider .swiper-button-prev,
+    .modal-image-slider .swiper-button-next {
+        top: 97.7%;
+        width: 29px;
+        height: 29px;
+        font-size: 1.7rem;
+    }
+    .modal-image-slider .swiper-pagination-bullet {
+        width: 45px;
+        height: 6px;
+        margin: 0 16px;
+    }
 }
 /* Modal End */
 
