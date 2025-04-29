@@ -357,7 +357,6 @@
     margin: 0 10px;
     transition: all 0.1s ease;
 }
-
 .modal-image-slider .swiper-pagination-bullet-active {
     background-color: #366d96;
 }
