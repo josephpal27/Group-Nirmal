@@ -41,7 +41,7 @@
     border-radius: 10px;
     padding: 1.7rem 1.5rem;
     position: absolute;
-    top: -3rem;
+    top: -2.5rem;
 }
 .form-head h1{
     text-align: center;
@@ -91,7 +91,7 @@
 @media screen and (min-width: 1400px) {
     .form-head{
         padding: 2.1rem 2rem;
-        top: -3.5rem;
+        top: -3rem;
     }
     .form-head h1{
         font-size: calc(1.65rem + 0.5vw);
@@ -116,7 +116,7 @@
     margin: 0 3rem;
     padding: 2rem 1rem;
     background-color: #ffffff8a;
-    margin-top: 8rem;
+    margin-top: 8.5rem;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -174,7 +174,7 @@
     .form-body{
         margin: 0 3.5rem 0 2.8rem;
         padding: 2.5rem 2rem;
-        margin-top: 10rem;
+        margin-top: 10.5rem;
     }
     .form-body h5{
         font-size: calc(0.6rem + 0.5vw);
@@ -207,7 +207,7 @@
     .form-body{
         margin: 0 4.2rem 0 2.8rem;
         padding: 2.7rem 2.2rem;
-        margin-top: 10.5rem;
+        margin-top: 11rem;
     }
     .form-body h5{
         font-size: calc(0.65rem + 0.5vw);
