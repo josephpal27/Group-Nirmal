@@ -28,11 +28,8 @@
 .career-form{
     margin: 0 8%;
     padding: 2rem 3rem 4rem 3rem;
-    /* background-color: red; */
-    /* background-image: url('../images/download-bg.jpg'); */
     background-image: url('../images/career-2.jpg');
     background-size: cover;
-    /* background-position: center; */
     position: relative;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -67,6 +64,50 @@
     padding: 0.7rem 1rem;
     border: 1px solid #bbbbbb;
     font-size: calc(0.6rem + 0.5vw);
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .form-head{
+        padding: 2.1rem 2rem;
+    }
+    .form-head h1{
+        font-size: calc(1.6rem + 0.5vw);
+    }
+    .form-head h5{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 1.2rem;
+    }
+    .form-head .input-row{
+        margin-top: 0.8rem;
+    }
+    .form-head .input-row select{
+        padding: 0.7rem 1.1rem;
+        border: 1.3px solid #bbbbbb;
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .form-head{
+        padding: 2.1rem 2rem;
+        top: -3.5rem;
+    }
+    .form-head h1{
+        font-size: calc(1.65rem + 0.5vw);
+    }
+    .form-head h5{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 1.4rem;
+    }
+    .form-head .input-row{
+        margin-top: 1rem;
+    }
+    .form-head .input-row select{
+        padding: 0.8rem 1.2rem;
+        border: 1.5px solid #bbbbbb;
+        font-size: calc(0.75rem + 0.5vw);
+    }
 }
 /* Form Head End */
 
@@ -126,6 +167,73 @@
 .form-body .submit-btn button:hover{
     background-color: #366d96;
     color: #fff;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .form-body{
+        margin: 0 3.5rem 0 2.8rem;
+        padding: 2.5rem 2rem;
+        margin-top: 10rem;
+    }
+    .form-body h5{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .form-body .input-row input{
+        padding: 0.75rem 1.2rem;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .form-body .input-row textarea{
+        padding: 0.75rem 1.2rem;
+        font-size: calc(0.6rem + 0.5vw);
+        min-height: 5.5rem;
+    }
+    .form-body .input-row label{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .form-body .input-row #msg{
+        min-height: 9rem;
+    }
+    .form-body .submit-btn{
+        margin-top: 1.8rem;
+    }
+    .form-body .submit-btn button{
+        padding: 0.6rem 3.5rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+}
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .form-body{
+        margin: 0 4.2rem 0 2.8rem;
+        padding: 2.7rem 2.2rem;
+        margin-top: 10.5rem;
+    }
+    .form-body h5{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .form-body .input-row input{
+        padding: 0.85rem 1.3rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .form-body .input-row textarea{
+        padding: 0.85rem 1.3rem;
+        font-size: calc(0.65rem + 0.5vw);
+        min-height: 6.5rem;
+    }
+    .form-body .input-row label{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .form-body .input-row #msg{
+        min-height: 10.5rem;
+    }
+    .form-body .submit-btn{
+        margin-top: 1.8rem;
+    }
+    .form-body .submit-btn button{
+        padding: 0.7rem 4.5rem;
+        font-size: calc(0.7rem + 0.5vw);
+    }
 }
 /* Form Body End */
 /* Career Form End */
