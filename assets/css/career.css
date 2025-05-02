@@ -152,9 +152,9 @@
     border-radius: 7px;
 }
 .life-nirmal .content-row .content p{
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.55rem + 0.5vw);
 }
-.life-nirmal .pointers-row{
+/* .life-nirmal .pointers-row{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
@@ -171,7 +171,7 @@
     font-size: calc(0.45rem + 0.5vw);
     font-weight: 550;
     margin: 0;
-}
+} */
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -182,15 +182,15 @@
         font-size: calc(2.3rem + 0.5vw);
     }
     .life-nirmal .content-row .content p{
-        font-size: calc(0.65rem + 0.5vw);
+        font-size: calc(0.6rem + 0.5vw);
     }
-    .life-nirmal .pointers-row img{
+    /* .life-nirmal .pointers-row img{
         width: 26px;
         margin-right: 2px;
     }
     .life-nirmal .pointers-row p{
         font-size: calc(0.5rem + 0.5vw);
-    }
+    } */
 }
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
@@ -201,14 +201,14 @@
         font-size: calc(2.6rem + 0.5vw);
     }
     .life-nirmal .content-row .content p{
-        font-size: calc(0.75rem + 0.5vw);
+        font-size: calc(0.7rem + 0.5vw);
     }
-    .life-nirmal .pointers-row img{
+    /* .life-nirmal .pointers-row img{
         width: 29px;
         margin-right: 2px;
     }
     .life-nirmal .pointers-row p{
         font-size: calc(0.55rem + 0.5vw);
-    }
+    } */
 }
 /* Life @ Nirmal End */
