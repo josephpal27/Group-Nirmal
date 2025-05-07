@@ -11,7 +11,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    padding: 2rem 8%;
+    padding: 4rem 8%;
 }
 .about-banner-layer .about-text{
     width: 48%;
@@ -40,14 +40,14 @@
         height: 100%;
     }
     .about-banner-layer{
-        padding: 3.8rem 8%;
+        padding: 5.8rem 8%;
     }
 }
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .about-banner-layer{
-        padding: 3rem 8%;
+        padding: 5rem 8%;
     }
     .about-banner-layer .about-text p{
         font-size: calc(0.4rem + 0.5vw);
@@ -61,7 +61,7 @@
         padding: 2.5rem 3rem;
     }
     .about-banner-layer{
-        padding: 3rem 8%;
+        padding: 5rem 8%;
     }
     .about-banner-layer .about-text p{
         font-size: calc(0.42rem + 0.5vw);
