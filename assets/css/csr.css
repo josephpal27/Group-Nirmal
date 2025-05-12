@@ -72,6 +72,10 @@
     margin-top: 0.8rem;
 }
 
+#our-presence-tabs{
+    margin-top: 3rem;
+}
+
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .top-text{
@@ -83,6 +87,9 @@
     .top-text p{
         font-size: calc(0.6rem + 0.5vw);
         margin-top: 0.9rem;
+    }
+    #our-presence-tabs{
+        margin-top: 3.5rem;
     }
 }
 /* For 100% in 15 inch screens */
@@ -96,6 +103,9 @@
     .top-text p{
         font-size: calc(0.68rem + 0.5vw);
         margin-top: 1rem;
+    }
+    #our-presence-tabs{
+        margin-top: 3.8rem;
     }
 }
 /* Top Text End */
