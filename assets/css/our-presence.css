@@ -1,0 +1,43 @@
+/* Media Start */
+.media{
+    overflow: hidden;
+    position: relative;
+}
+
+.media .swiper-button-prev,
+.media .swiper-button-next {
+    position: absolute;
+    top: 97%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    background-color: #366d96;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.media .swiper-button-prev span,
+.media .swiper-button-next span{
+    margin-top: -3px;
+    user-select: none;
+}
+.media .swiper-button-next::after,
+.media .swiper-button-prev::after{
+    display: none;
+}
+.media .swiper-button-prev:hover,
+.media .swiper-button-next:hover {
+    background-color: #22567e;
+}
+.media .swiper-button-prev {
+    left: calc(51% - 60px); /* Position the previous button to the left of the center */
+}
+.media .swiper-button-next {
+    right: calc(51% - 60px); /* Position the next button to the right of the center */
+}
+/* Media End */
