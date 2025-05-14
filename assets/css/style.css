@@ -15,7 +15,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3rem 2rem 0.4rem 2rem;
+    padding: 0.3rem 2rem 0.8rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
 }
@@ -66,6 +66,22 @@ nav{
 }
 .nav-right .social-icons img{
     width: 22px;
+}
+.nav-right button{
+    position: absolute;
+    bottom: 0.6rem;
+    right: 1.6%;
+    border: none;
+    background-color: #376d95;
+    color: #fff;
+    font-weight: 550;
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 0.2rem 0.7rem;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+.nav-right button:hover{
+    background-color: #214e70;
 }
 .nav-menu{
     width: 75%;
