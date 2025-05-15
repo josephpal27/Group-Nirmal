@@ -340,6 +340,7 @@ nav{
 }
 .chairman-content .chairman-image img{
     width: 100%;
+    border: 0.4rem solid #fff;
 }
 .chairman-content .chairman-desc{
     width: 59%;
@@ -514,13 +515,34 @@ nav{
 
 /* Media Start */
 .media{
-    padding: 3rem 5.6% 5rem 5.6%;
+    padding: 3rem 5.6% 4rem 5.6%;
 }
 .media h1{
     text-align: center;
     font-weight: 650;
     font-size: calc(1.1rem + 1vw);
+    color: #386c94;
 }
+.media .latest-news-head{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+.media .latest-news-head button{
+    background-color: transparent !important;
+    color: #000;
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+    border-radius: 0;
+    padding: 0.2rem 2.5rem;
+}
+.media .latest-news-head button.active{
+    color: #386c94;
+}
+.media .latest-news-head button:first-child{
+    border-right: 2px solid #386c94;
+}
+
 .media-boxes{
     margin-top: 1.7rem;
     display: flex;
@@ -589,7 +611,10 @@ nav{
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .media{
-        padding: 4rem 1.2rem 5.5rem 1.2rem;
+        padding: 4rem 1.2rem 4.5rem 1.2rem;
+    }
+    .media .latest-news-head button{
+        font-size: calc(0.88rem + 0.5vw);
     }
     .media-boxes{
         margin-top: 2rem;
@@ -599,7 +624,14 @@ nav{
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .media{
-        padding: 4rem 1.5% 5.5rem 1.5%;
+        padding: 4rem 1.5% 5rem 1.5%;
+    }
+    .media .latest-news-head{
+        margin: 1.8rem 0;
+    }
+    .media .latest-news-head button{
+        font-size: calc(0.9rem + 0.5vw);
+        padding: 0.2rem 3rem;
     }
     .media-boxes{
         margin-top: 2rem;
@@ -613,6 +645,80 @@ nav{
 }
 /* Media End */
 
+/* Contact Us Start */
+.contact-us{
+    background-image: url(../images/cta-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+.contact-us .contact-us-content{
+    padding: 3rem 5.6% 3rem 5.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.contact-us .contact-us-content h1{
+    text-transform: uppercase;
+    font-size: calc(1.7rem + 0.5vw);
+    font-weight: 600;
+}
+.contact-us .contact-us-content p{
+    font-size: calc(0.5rem + 0.5vw);
+    width: 55%;
+    text-align: center;
+}
+.contact-us .contact-us-content button{
+    font-size: calc(0.55rem + 0.5vw);
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 0.2rem 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+.contact-us .contact-us-content button:hover{
+    background-color: #386c94;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .contact-us .contact-us-content{
+        padding: 4.5rem 1.2rem 4rem 1.2rem;
+    }
+    .contact-us .contact-us-content h1{
+        font-size: calc(1.8rem + 0.5vw);
+    }
+    .contact-us .contact-us-content p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .contact-us .contact-us-content button{
+        font-size: calc(0.6rem + 0.5vw);
+        padding: 0.3rem 1.2rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .contact-us .contact-us-content{
+        padding: 5rem 1.5% 4.5rem 1.5%;
+    }
+    .contact-us .contact-us-content h1{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .contact-us .contact-us-content p{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 0.2rem;
+    }
+    .contact-us .contact-us-content button{
+        font-size: calc(0.68rem + 0.5vw);
+        padding: 0.4rem 1.4rem;
+    }
+}
+/* Contact Us End */
 
 /* Footer Start */
 footer{
