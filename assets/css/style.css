@@ -340,7 +340,7 @@ nav{
 }
 .chairman-content .chairman-image img{
     width: 100%;
-    border: 0.4rem solid #fff;
+    /* border: 0.4rem solid #fff; */
 }
 .chairman-content .chairman-desc{
     width: 59%;
@@ -370,7 +370,8 @@ nav{
 
 @media screen and (max-width: 1229px){
     .chairman-content{
-        padding: 3rem 5.2%;
+        /* padding: 3rem 5.2%; */
+        padding: 0 5.2%;
     }
 }
 
