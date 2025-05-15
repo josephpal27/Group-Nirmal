@@ -231,7 +231,6 @@ nav{
 .about-us{
     position: relative;
     margin-top: -0.5rem;
-    overflow: hidden;
 }
 .about-us video{
     width: 100%;
@@ -259,34 +258,39 @@ nav{
 }
 .about-us .count-row{
     position: absolute;
-    bottom: 0.45rem;
+    bottom: -7rem;
     left: 8%;
     display: flex;
     justify-content: space-between;
     width: 84%;
+    background-image: url('../images/count-row-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 2.5rem;
 }
 .about-us .count-row .count-box{
     width: 25%;
-    text-align: center;
-    padding: 1rem 0;
-}
-.about-us .count-row .count-box h2{
-    font-weight: 700;
-    font-size: calc(1.3rem + 1vw);
-}
-.about-us .count-row .count-box p{
-    font-weight: 550;
-    font-size: calc(0.6rem + 0.5vw);
-    margin: 0;
-}
-.about-us .count-row .bl{
-    background-color: #366d96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 }
-.about-us .count-row .wh{
-    background-color: #fff;
-    color: #366d96;
+.about-us .count-row .count-box img{
+    width: 40px;
 }
+.about-us .count-row .count-box h2{
+    margin-top: 0.7rem;
+    font-weight: 700;
+    font-size: calc(1.6rem + 0.5vw);
+    margin-bottom: 0.3rem;
+}
+.about-us .count-row .count-box p{
+    margin: 0;
+    font-weight: 500;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
@@ -303,79 +307,110 @@ nav{
         font-size: calc(0.55rem + 0.5vw);
         margin-top: 0.8rem;
     }
-    .about-us .count-row .count-box{
-        padding: 1.5rem 0;
+    .about-us .count-row{
+        bottom: -8.2rem;
+        padding: 2.2rem 2.5rem;
+    }
+    .about-us .count-row .count-box img{
+        width: 45px;
+    }
+    .about-us .count-row .count-box h2{
+        font-size: calc(1.8rem + 0.5vw);
+        margin-bottom: 0.25rem;
+    }
+    .about-us .count-row .count-box p{
+        font-size: calc(0.6rem + 0.5vw);
     }
 }
 /* About End */
 
 /* Chairman Start */
 .chairman{
-    margin-top: -0.5rem;
-    background-image: url('../images/chairman-bg.png');
+    margin-top: 10rem;
+    background-image: url('../images/chairman-bg-2.png');
     background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
 .chairman-content{
     display: flex;
     justify-content: space-between;
-    padding: 8.7rem 5%;
 }
-.chairman-content .chairman-msg{
-    width: 62%;
-    color: #fff;
+.chairman-content .chairman-image{
+    width: 36%;
 }
-.chairman-content .chairman-msg h1{
-    margin: 0;
-    font-weight: 650;
-    font-size: calc(1.3rem + 1vw);
-}
-.chairman-content .chairman-msg p{
-    margin: 0;
-    margin-top: 1.5rem;
-    font-size: calc(0.44rem + 0.5vw);
-    text-align: justify;
-}
-.chairman-content .chairman-msg .bottom{
-    margin-top: 3rem;
-}
-.chairman-content .chairman-msg .bottom p{
-    text-align: end;
-    font-size: calc(0.9rem + 0.5vw);
-    font-weight: 550;
-    margin: 0;
-}
-.chairman-content .chairman-msg .bottom p:last-child{
-    font-size: calc(0.9rem + 0.5vw);
-    font-weight: 700;
-    margin-top: 0.5rem;
-}
-.chairman-content .chairman-img{
-    width: 25%;
-}
-.chairman-content .chairman-img img{
+.chairman-content .chairman-image img{
     width: 100%;
-    border: 5px solid #fff;
 }
+.chairman-content .chairman-desc{
+    width: 59%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.chairman-content .chairman-desc img{
+    width: 25px;
+}
+.chairman-content .chairman-desc h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: calc(1.8rem + 0.5vw);
+    margin-top: 0.8rem;
+}
+.chairman-content .chairman-desc p{
+    font-size: calc(0.5rem + 0.5vw);
+    margin-top: 0.7rem;
+}
+.chairman-content .chairman-desc-foot p{
+    font-size: calc(0.65rem + 0.5vw);
+    margin-top: 1.3rem;
+}
+
 
 @media screen and (max-width: 1229px){
     .chairman-content{
-        padding: 10rem 5.2%;
+        padding: 3rem 5.2%;
     }
 }
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .chairman-content{
-        padding: 10rem 0;
+        padding: 3.5rem 0;
+    }
+    .chairman-content .chairman-desc h1{
+        font-size: calc(1.9rem + 0.5vw);
+        margin-top: 0.85rem;
+    }
+    .chairman-content .chairman-desc p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.75rem;
+    }
+    .chairman-content .chairman-desc-foot p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-top: 1.4rem;
     }
 }
 
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
+    .chairman{
+        margin-top: 12rem;
+    }
     .chairman-content{
-        padding: 11rem 1.5% 10.5rem 1.5%;
+        padding: 4rem 1.5% 4rem 1.5%;
+    }
+     .chairman-content .chairman-desc h1{
+        font-size: calc(2rem + 0.5vw);
+        margin-top: 0.9rem;
+    }
+    .chairman-content .chairman-desc p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.8rem;
+    }
+    .chairman-content .chairman-desc-foot p{
+        font-size: calc(0.8rem + 0.5vw);
+        margin-top: 1.5rem;
     }
 }
 /* Chairman End */
@@ -490,6 +525,7 @@ nav{
     margin-top: 1.7rem;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 .media-boxes img{
     width: 100%;
@@ -505,6 +541,9 @@ nav{
 }
 .media-boxes .media-center{
     width: 47.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .media-boxes .media-center .center-box{
     width: 100%;
