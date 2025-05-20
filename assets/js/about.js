@@ -1,91 +1,70 @@
-let contentBoxes = document.querySelectorAll(".journey-content");
-let balls = document.querySelectorAll(".ball");
-let progressBoxes = document.querySelectorAll(".progress-box");
-let backButton = document.getElementById("back-button");
-let nextButton = document.getElementById("next-button");
+const slides = [
+  { year: 1971, title: "Beginning of wire drawing", text: "Our journey began..." },
+  { year: 1980, title: "Expanded Operations", text: "Expanded in..." },
+  { year: 1990, title: "Expanded Operations", text: "Expanded in..." },
+  { year: 1900, title: "Expanded Operations", text: "Expanded in..." },
+  { year: 1970, title: "Expanded Operations", text: "Expanded in..." },
+  { year: 1940, title: "Expanded Operations", text: "Expanded in..." },
+  { year: 1920, title: "Expanded Operations", text: "Expanded in..." },
+  // ... add up to 10 objects
+];
+let activeIndex = 0;
 
-function hideAllBoxes() {
-    contentBoxes.forEach((box) => {
-        box.style.display = "none";
-    });
+const slideContainer = document.getElementById("slideContainer");
+const ballContainer = document.getElementById("ballContainer");
+
+function renderSlide(index) {
+  const slide = slides[index];
+  slideContainer.innerHTML = `
+    <h2>${slide.year}</h2>
+    <h3>${slide.title}</h3>
+    <p>${slide.text}</p>
+  `;
 }
 
-hideAllBoxes();
-contentBoxes[0].style.display = "block";
+function renderBalls(index) {
+  ballContainer.innerHTML = "";
 
-let currentIndex = 0;
+  const start = Math.max(0, index - 1);
+  const end = Math.min(slides.length - 1, index + 1);
 
-balls.forEach((ball, index) => {
-    ball.addEventListener("click", function () {
-        hideAllBoxes();
-        contentBoxes[index].style.display = "block";
-        currentIndex = index;
+  const displayIndices = [];
+  if (index === 0) displayIndices.push(0, 1, 2);
+  else if (index === slides.length - 1) displayIndices.push(index - 2, index - 1, index);
+  else displayIndices.push(index - 1, index, index + 1);
 
-        progressBoxes.forEach((box, ind) => {
-            box.style.left = `${ind * 15}rem`;
-            box.style.top = "-50px";
-            // box.style.top = "-55px";
-            let year = box.querySelector(".year");
-            year.style.transform = "scale(1.0)";
-            year.style.opacity = "1";
-            year.style.top = "0";
-            year.style.paddingBottom = "0";
-            year.style.fontWeight = "normal";
-        });
-
-        for (let i = 0; i < index; i++) {
-            balls[i].style.display = "none";
-        }
-
-        for (let i = index + 1; i < progressBoxes.length; i++) {
-            progressBoxes[i].style.left = `${(i - index) * 15}rem`;
-        }
-
-        let clickedBox = progressBoxes[index];
-        clickedBox.style.left = "-2rem";
-        clickedBox.style.top = "-50px";
-
-
-        let year = clickedBox.querySelector(".year");
-        year.style.top = "-105px";
-        year.style.fontWeight = "bold";
-        year.style.transform = "scale(1.3)";
-
-        for (let i = 0; i < index; i++) {
-            let year = progressBoxes[i].querySelector(".year");
-            year.style.opacity = "0";
-        }
-    });
-});
-
-backButton.addEventListener("click", function () {
-    if (currentIndex > 0) {
-        currentIndex--;
-        balls[currentIndex].click();
-        balls[currentIndex].style.display = "block";
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    let balls = document.querySelectorAll('.ball');
-    
-    // By default, make the second ball flicker
-    let currentFlicker = balls[1]; // assuming balls are zero-indexed and second ball is index 1
-    currentFlicker.classList.add('flicker');
-  
-    balls.forEach((ball, index) => {
-      ball.addEventListener('click', function() {
-        // Remove flicker from the current ball
-        currentFlicker.classList.remove('flicker');
-        
-        // Determine the next ball to flicker
-        let nextBallIndex = index + 1;
-        
-        if (nextBallIndex < balls.length) {
-          currentFlicker = balls[nextBallIndex];
-          currentFlicker.classList.add('flicker');
-        }
+  displayIndices.forEach(i => {
+    if (i >= 0 && i < slides.length) {
+      const ball = document.createElement("div");
+      ball.className = "ball" + (i === index ? " active" : "");
+      ball.innerText = slides[i].year;
+      ball.addEventListener("click", () => {
+        activeIndex = i;
+        updateSlider();
       });
-    });
+      ballContainer.appendChild(ball);
+    }
   });
-  
+}
+
+function updateSlider() {
+  renderSlide(activeIndex);
+  renderBalls(activeIndex);
+}
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (activeIndex < slides.length - 1) {
+    activeIndex++;
+    updateSlider();
+  }
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  if (activeIndex > 0) {
+    activeIndex--;
+    updateSlider();
+  }
+});
+
+// Initialize
+updateSlider();

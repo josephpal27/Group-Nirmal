@@ -11,14 +11,16 @@
     height: 100%;
     position: absolute;
     top: 0;
-    padding: 4rem 8%;
+    padding: 0 8%;
 }
 .about-banner-layer .about-text{
-    width: 48%;
+    width: 42%;
     background-color: rgba(43, 129, 184, 0.8);
     color: #fff;
     overflow: hidden;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 6rem 2rem;
+    position: absolute;
+    bottom: 0;
 }
 .about-banner-layer .about-text h1{
     font-weight: 650;
@@ -28,7 +30,7 @@
 .about-banner-layer .about-text p{
     margin: 0;
     margin-top: 0.65rem;
-    font-size: calc(0.37rem + 0.5vw);
+    font-size: calc(0.5rem + 0.5vw);
     text-align: justify;
 }
 
@@ -39,447 +41,72 @@
     .about-banner img{
         height: 100%;
     }
-    .about-banner-layer{
-        padding: 5.8rem 8%;
-    }
 }
 
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
-    .about-banner-layer{
-        padding: 5rem 8%;
+    .about-banner-layer .about-text{
+        padding: 2rem 2.5rem 7rem 2.5rem;
     }
     .about-banner-layer .about-text p{
-        font-size: calc(0.4rem + 0.5vw);
+        font-size: calc(0.55rem + 0.5vw);
         margin-top: 0.7rem;
     }
 }
 
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
-    .about-banner-layer .about-text{
-        padding: 2.5rem 3rem;
+     .about-banner-layer .about-text{
+        padding: 2.5rem 2.8rem 8rem 2.8rem;
     }
-    .about-banner-layer{
-        padding: 5rem 8%;
+    .about-banner-layer .about-text h1{
+        font-size: calc(1.45rem + 1vw);
     }
     .about-banner-layer .about-text p{
-        font-size: calc(0.42rem + 0.5vw);
+        font-size: calc(0.6rem + 0.5vw);
         margin-top: 0.72rem;
     }
 }
 /* Banner End */
 
 /* Our Journey Start */
-.our-journey {
-    overflow: hidden;
-    color: #fff;
-    background-image: url(../images/our-journey-bg.jpg);
+.our-journey{
+    background-image: url('../images/our-journey-bg.webp');
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 2rem 0;
-  }
-  .our-journey .upper-layer {
-    top: 0;
-  }
-  .our-journey .upper-layer .journey-content h2 {
-    font-weight: 650;
-  }
-  .our-journey .upper-layer .journey-content .left-side {
-    height: 300px;
-    overflow: hidden;
-    margin-right: 2rem;
-  }
-  .our-journey .upper-layer .journey-content .right-side h3 {
-    font-size: calc(18px + (100 - 30) * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  .our-journey .upper-layer .journey-content .right-side p {
-    font-size: calc(8px + (55 - 20) * ((100vw - 300px) / (1920 - 300)));
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  .our-journey .upper-layer .journey-content .right-side p:last-child {
-    font-size: calc(0.6rem + 0.5vw) !important;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  .our-journey .journey-line-container {
-    height: 20%;
-    width: 100%;
-    top: -25%;
-    left: 10%;
-    padding-left: 5rem;
-  }
-  .our-journey .journey-line-container #back-button {
-    position: relative;
-    top: 5.6rem !important;
-    bottom: 0;
-    left: -25px;
-    margin: auto;
-    z-index: 1000;
-    border: none;
-  }
-  .our-journey .journey-line-container #back-button img {
-    width: 25px;
-  }
-  .our-journey .journey-line-container #back-button:focus {
-    box-shadow: none;
-  }
-  .our-journey .journey-line-container #next-button:focus {
-    box-shadow: none;
-  }
-  .our-journey .journey-line-container .journey-line {
-    top: 100%;
-    width: 100%;
-  }
-  .our-journey .journey-line-container .journey-line .progress {
-    width: 100%;
-    left: 0rem;
-  }
-  .our-journey .journey-line-container .journey-line .ball {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    margin: auto;
-  }
-  .our-journey .journey-line-container .journey-line .progress-box {
-    top: -50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease;
-  }
-  .our-journey .journey-line-container .journey-line #year-1 {
-    font-weight: 700;
-  }
-  .our-journey .journey-line-container .journey-line .year {
-    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1920 - 300)));
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-1 {
-    left: -25px;
-    pointer-events: none;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-2 {
-    left: 15rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-3 {
-    left: 30rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-4 {
-    left: 45rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-5 {
-    left: 60rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-6 {
-    left: 75rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-7 {
-    left: 90rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-8 {
-    left: 105rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-9 {
-    left: 120rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-10 {
-    left: 135rem;
-  }
-  .our-journey .journey-line-container .journey-line #progress-box-11 {
-    left: 150rem;
-  }
-  .our-journey .journey-line-container .progress-container {
-    width: 100%;
-    height: 8px;
-    overflow-x: hidden;
-  }
-  
-  
-  /* Define the scale animation */
-  @keyframes flicker {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .flicker {
-    animation: flicker 1s infinite;
-  }
-
-
-@media screen and (max-width: 1220px){
-    .our-journey {
-        padding: 2rem 0 3rem 0;
-    }
-    .our-journey .upper-layer .journey-content .container-fluid {
-        margin-top: 1.8rem;
-    }
-    .our-journey .journey-line-container #back-button {
-        top: 6.2rem !important;
-        left: -20px;
-    }
+    color: #fff;
 }
-
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .our-journey {
-        padding: 2.5rem 0 3rem 0;
-    }
-    .our-journey .upper-layer .journey-content .container-fluid {
-        margin-top: 2.2rem;
-    }
-    .our-journey .journey-line-container #back-button {
-        top: 6.4rem !important;
-        left: -15px;
-    }
+.our-journey-content{
+    padding: 4rem 8%;
 }
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-    .our-journey {
-        padding: 3rem 0 3.5rem 0;
-    }
-    .our-journey .upper-layer .journey-content .container-fluid {
-        margin-top: 2.7rem;
-    }
-    .our-journey .journey-line-container #back-button {
-        top: 7.2rem !important;
-        left: -25px;
-    }
-    .our-journey .upper-layer .journey-content .right-side p:last-child {
-        font-size: calc(0.7rem + 0.5vw) !important;
-      }
+.our-journey-content h1{
+    font-weight: 600;
+    font-size: calc(1.3rem + 1vw);
+    color: #fff;
+    text-align: center;
 }
 /* Our Journey End */
 
-/* Brand Story Start */
-.brand-story{
-    width: 100%;
-    position: relative;
-}
-.brand-story img{
-    width: 100%;
-}
-.brand-story-layer{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.795);
-    padding: 7rem 8%;
-}
-.brand-story-layer h1{
-    font-weight: 650;
-    font-size: calc(1.5rem + 1vw);
-}
-.brand-story-layer .brand-content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.2rem;
-}
-.brand-story-layer .brand-content .content{
-   width: 46.5%;
-}
-.brand-story-layer .brand-content .content p{
-    font-size: calc(0.55rem + 0.5vw);
-    font-weight: 600;
-    text-align: justify;
-}
 
-@media screen and (max-width: 1220px){
-    .brand-story-layer{
-        padding: 8.5rem 8% 10rem 8%;
-    }
-    .brand-story{
-        height: 100vh;
-    }
-    .brand-story img{
-        height: 100%;
-    }
+/* ---- */
+.controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .brand-story-layer{
-        padding: 8.5rem 8%;
-    }
+.balls {
+  display: flex;
+  gap: 10px;
 }
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-    .brand-story-layer{
-        padding: 9.5rem 8%;
-    }
-    .brand-story-layer .brand-content .content p{
-        font-size: calc(0.65rem + 0.5vw);
-    }
+.ball {
+  width: 15px;
+  height: 15px;
+  background-color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-/* Brand Story End */
-
-/* Chairman Start */
-.chairman-content{
-    padding: 6rem 5% 4rem 5%;
+.ball.active {
+  background-color: #fff;
 }
-.chairman-content .chairman-msg p{
-    margin-top: 1rem;
-    font-size: calc(0.4rem + 0.5vw);
-}
-.chairman-content .chairman-msg .bottom{
-    margin-top: 1.5rem;
-}
-.chairman-content .chairman-msg .bottom p{
-    font-size: calc(0.8rem + 0.5vw);
-}
-.chairman-content .chairman-msg .bottom p:last-child{
-    font-size: calc(0.8rem + 0.5vw);
-}
-.chairman-content .chairman-img{
-    width: 29%;
-    margin-top: 3.8rem;
-}
-
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .chairman-content{
-        padding: 6rem 0 4rem 0;
-    }
-    .chairman-content .chairman-msg p{
-        font-size: calc(0.45rem + 0.5vw);
-    }
-    .chairman-content .chairman-msg .bottom p{
-        font-size: calc(0.84rem + 0.5vw);
-    }
-    .chairman-content .chairman-msg .bottom p:last-child{
-        font-size: calc(0.84rem + 0.5vw);
-    }
-}
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-    .chairman-content{
-        padding: 6rem 1.5% 4rem 1.5%;
-    }
-    .chairman-content .chairman-msg p{
-        font-size: calc(0.5rem + 0.5vw);
-    }
-    .chairman-content .chairman-msg .bottom p{
-        font-size: calc(0.88rem + 0.5vw);
-    }
-    .chairman-content .chairman-msg .bottom p:last-child{
-        font-size: calc(0.88rem + 0.5vw);
-    }
-}
-/* Chairman End */
-
-/* Vision Mission Start */
-.vision-mission{
-    background-image: url('../images/product-details-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 9rem 8% 4.8rem 8%; 
-}
-.vision-mission-container{
-    display: flex;
-    justify-content: space-between;
-}
-.vision-mission-box{
-    background-color: rgba(43, 129, 184, 0.8);
-    position: relative;
-    color: #fff;
-    width: 47%;
-    border-radius: 5px;
-    padding: 2rem;
-}
-.vision-mission-box .card-img{
-    position: absolute;
-    left: 35%;
-    background-color: #d9d9d9;
-    width: 30%;
-    margin: -6.7rem auto;
-    padding: 2.8rem;
-    border: 13px solid #fff;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.vision-mission-box .card-img img{
-    width: 100%;
-    scale: 1.7;
-}
-.vision-mission-box h1{
-    font-weight: 650;
-    font-size: calc(1rem + 1vw);
-    text-align: center;
-    margin-top: 4rem;
-}
-.vision-mission-box h5{
-    font-weight: 600;
-    font-size: calc(0.6rem + 0.5vw);
-    margin-top: 1.8rem;
-}
-.vision-mission-box p{
-    font-size: calc(0.5rem + 0.5vw);
-    margin-top: 1.2rem;
-}
-.vision-mission-box ul{
-    font-size: calc(0.5rem + 0.5vw);
-    margin-top: 1.2rem;
-    padding: 0;
-    padding-left: 1rem;
-}
-.vision-mission-box ul li{
-    margin-bottom: 0.6rem;
-}
-
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .vision-mission{
-        padding: 9.5rem 8% 4.8rem 8%; 
-    }
-    .vision-mission-box{
-        padding: 2rem 2.5rem;
-    }
-    .vision-mission-box h1{
-        margin-top: 5.8rem;
-    }
-    .vision-mission-box .card-img img{
-        scale: 1.3;
-    }
-}
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-    .vision-mission{
-        padding: 10rem 8% 5.2rem 8%; 
-    }
-    .vision-mission-box{
-        padding: 2.3rem 3rem;
-    }
-    .vision-mission-box h1{
-        margin-top: 7rem;
-    }
-    .vision-mission-box .card-img img{
-        scale: 1.1;
-    }
-}
-/* Vision Mission End */
-
-/* Media Start (Media Styles Are Coming From style.css)*/
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .media{
-        padding: 4rem 0 5.5rem 0;
-    }
-}
-/* Media End */
+/* ---- */
