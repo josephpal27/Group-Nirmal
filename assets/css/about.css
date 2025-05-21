@@ -2,6 +2,7 @@
 .about-banner{
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .about-banner img{
     width: 100%;
@@ -81,14 +82,152 @@
 .our-journey-content h1{
     font-weight: 600;
     font-size: calc(1.3rem + 1vw);
-    color: #fff;
     text-align: center;
+}
+
+.timeline-slide-container{
+    overflow: hidden;
+    margin-top: 3.5rem;
+}
+.timeline-slide-container .timeline-slide{
+    display: flex;
+    justify-content: space-between;
+}
+.timeline-slide .timeline-content{
+    width: 53%;
+}
+.timeline-slide .timeline-image{
+    width: 42%;
+}
+.timeline-slide .timeline-image img{
+    width: 100%;
+    border: 3px solid #fff;
+}
+.timeline-slide .timeline-content h2{
+    font-weight: 800;
+    font-size: calc(2rem + 1vw);
+}
+.timeline-slide .timeline-content h3{
+    font-size: calc(0.9rem + 1vw);
+    font-weight: 550;
+    margin-top: 1rem;
+}
+.timeline-slide .timeline-content p{
+    margin: 0;
+    margin-top: 1.2rem;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 500;
+}
+/* btns */
+.timeline-slide-btns{
+    width: 42%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 1.5rem 0;
+}
+.timeline-slide-btns i{
+    font-size: calc(0.2rem + 0.5vw);
+}
+.timeline-slide-btns button{
+    font-size: calc(1.5rem + 0.5vw);
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    transition: color 0.2s ease;
+}
+.timeline-slide-btns button:hover{
+    color: #d2d2d2;
+}
+.timeline-slide-btns button i{
+    font-size: calc(0.01rem + 0.4vw);
+}
+.timeline-slide-btns button span{
+    margin-top: -7px;
+}
+/* controller */
+.timeline-controller{
+    background: linear-gradient(to right, transparent, #fff 20%, #fff 80%, transparent);
+    height: 3px;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.timeline-balls-wrapper{
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 5.3rem; */
+    padding: 4rem 0;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+}
+/* timeline balls */
+.timeline-ball{
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 3.5rem;
+}
+.timeline-ball img{
+    width: 15px;
+    cursor: pointer;
+}
+.timeline-ball.active img{
+    width: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #1b1b1b;
+}
+.timeline-ball.active{
+    pointer-events: none;
+    bottom: 3rem;
+}
+.timeline-ball p{
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    transition: all 0.5s ease;
+}
+.timeline-ball.active p{
+    font-size: calc(1.1rem + 0.5vw);
+}
+#ball-1{
+    pointer-events: none;
+    left: 5rem;
+}
+#ball-1 p{
+    color: transparent;
+}
+#ball-2{
+    left: 10rem;
+}
+#ball-3{
+    left: 15rem;
+}
+#ball-4{
+    left: 20rem;
+}
+#ball-5{
+    left: 25rem;
 }
 /* Our Journey End */
 
-
 /* ---- */
-.controller {
+/* .controller {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,5 +247,5 @@
 }
 .ball.active {
   background-color: #fff;
-}
+} */
 /* ---- */
