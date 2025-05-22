@@ -378,7 +378,7 @@ nav{
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .chairman-content{
-        padding: 3.5rem 0;
+        padding: 0 0;
     }
     .chairman-content .chairman-desc h1{
         font-size: calc(1.9rem + 0.5vw);
@@ -400,7 +400,7 @@ nav{
         margin-top: 12rem;
     }
     .chairman-content{
-        padding: 4rem 1.5% 4rem 1.5%;
+        padding: 0 1.5% 0 1.5%;
     }
      .chairman-content .chairman-desc h1{
         font-size: calc(2rem + 0.5vw);

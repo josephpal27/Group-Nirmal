@@ -1,124 +1,152 @@
-// const slides = [
-//   { year: 1971, title: "Beginning of wire drawing", text: "Our journey began..." },
-//   { year: 1980, title: "Expanded Operations", text: "Expanded in..." },
-//   { year: 1990, title: "Expanded Operations", text: "Expanded in..." },
-//   { year: 1900, title: "Expanded Operations", text: "Expanded in..." },
-//   { year: 1970, title: "Expanded Operations", text: "Expanded in..." },
-//   { year: 1940, title: "Expanded Operations", text: "Expanded in..." },
-//   { year: 1920, title: "Expanded Operations", text: "Expanded in..." },
-//   // ... add up to 10 objects
-// ];
-// let activeIndex = 0;
+// Functionlity for Timeline Slider
+const years = [
+  '', '1971', '1995', '1996', '2003', '2010', '2013', '2014', '2018', '2019',
+  '2021', '2022', '2023', '2024', '2024', ''
+];
 
-// const slideContainer = document.getElementById("slideContainer");
-// const ballContainer = document.getElementById("ballContainer");
+const totalSlides = years.length;
+const firstDisabledIndex = 0;
+const lastDisabledIndex = totalSlides - 1;
+const dotSize = 17;
+const gap = 100;
+const dotOffset = dotSize + gap;
 
-// function renderSlide(index) {
-//   const slide = slides[index];
-//   slideContainer.innerHTML = `
-//     <h2>${slide.year}</h2>
-//     <h3>${slide.title}</h3>
-//     <p>${slide.text}</p>
-//   `;
-// }
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-// function renderBalls(index) {
-//   ballContainer.innerHTML = "";
+let currentIndex = 1;
+let allowDragLeft = true;
+let allowDragRight = true;
 
-//   const start = Math.max(0, index - 1);
-//   const end = Math.min(slides.length - 1, index + 1);
-
-//   const displayIndices = [];
-//   if (index === 0) displayIndices.push(0, 1, 2);
-//   else if (index === slides.length - 1) displayIndices.push(index - 2, index - 1, index);
-//   else displayIndices.push(index - 1, index, index + 1);
-
-//   displayIndices.forEach(i => {
-//     if (i >= 0 && i < slides.length) {
-//       const ball = document.createElement("div");
-//       ball.className = "ball" + (i === index ? " active" : "");
-//       ball.innerText = slides[i].year;
-//       ball.addEventListener("click", () => {
-//         activeIndex = i;
-//         updateSlider();
-//       });
-//       ballContainer.appendChild(ball);
-//     }
-//   });
-// }
-
-// function updateSlider() {
-//   renderSlide(activeIndex);
-//   renderBalls(activeIndex);
-// }
-
-// document.getElementById("nextBtn").addEventListener("click", () => {
-//   if (activeIndex < slides.length - 1) {
-//     activeIndex++;
-//     updateSlider();
-//   }
-// });
-
-// document.getElementById("prevBtn").addEventListener("click", () => {
-//   if (activeIndex > 0) {
-//     activeIndex--;
-//     updateSlider();
-//   }
-// });
-
-// // Initialize
-// updateSlider();
-
-// ----------------------------------------------------------------------------------------------------------------------
-
-// let timelineBall = document.querySelectorAll(".timeline-ball");
-// timelineBall.forEach((ball) => {
-//   ball.addEventListener("click", function () {
-//     timelineBall.forEach((b) => {
-//       // Get current marginLeft in px/rem, convert to rem, and subtract 5.3rem
-//       let currentMargin = window.getComputedStyle(b).marginLeft;
-//       let currentValue = parseFloat(currentMargin);
-//       let isRem = currentMargin.includes('rem');
-//       let shift = 5.3;
-//       let newValue;
-//       if (isRem) {
-//         newValue = currentValue - shift;
-//         b.style.marginLeft = `${newValue}rem`;
-//       } else {
-//         // If px, convert 5.3rem to px (assuming 1rem = 16px)
-//         let pxShift = shift * 16;
-//         newValue = currentValue - pxShift;
-//         b.style.marginLeft = `${newValue}px`;
-//       }
-//       b.classList.remove("active");
-//     });
-//     this.classList.add("active");
-//   });
-// });
-
-
-// ----------------------------------------------------------------------------------------------------------------------
-let timelineBalls = document.querySelectorAll('.timeline-ball');
-
-timelineBalls.forEach((ball) => {
-  ball.addEventListener('click', function () {
-    // Remove active from all, add to clicked
-    timelineBalls.forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-
-    // Shift all balls left by 5rem from current left
-    timelineBalls.forEach(b => {
-      let currentLeft = window.getComputedStyle(b).left;
-      let value = parseFloat(currentLeft);
-      let isRem = currentLeft.includes('rem');
-      let shift = 5; // rem
-
-      if (isRem) {
-        b.style.left = (value - shift) + 'rem';
-      } else {
-        // If px, convert 5rem to px (assuming 1rem = 16px)
-        b.style.left = (value - shift * 16) + 'px';
-      }
-    });
-  });
+const swiper = new Swiper('.ourJourneySwiper', {
+  loop: true,
+  slidesPerView: 1,
+  initialSlide: currentIndex,
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  speed: 500,
+  allowTouchMove: false,
+  on: {
+    init() {
+      renderDots(this.realIndex);
+      updateNavButtons(this.realIndex);
+      updateDragDirection(this.realIndex);
+    },
+    slideChange() {
+      currentIndex = this.realIndex;
+      renderDots(this.realIndex);
+      updateNavButtons(this.realIndex);
+      updateDragDirection(this.realIndex);
+    }
+  }
 });
+
+function renderDots(activeIndex) {
+  const container = document.querySelector('.custom-pagination');
+  container.innerHTML = '';
+
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('pagination-dot');
+    if (i === activeIndex) dot.classList.add('active');
+    dot.innerHTML = `<span>${years[i]}</span>`;
+
+    if (i === firstDisabledIndex || i === lastDisabledIndex) {
+      dot.style.pointerEvents = 'none';
+      dot.classList.add('disabled-dot');
+    } else {
+      dot.onclick = () => swiper.slideToLoop(i);
+    }
+
+    container.appendChild(dot);
+  }
+
+  const centerOffset = Math.max(0, activeIndex - 1) * dotOffset;
+  container.style.transform = `translateX(-${centerOffset}px)`;
+}
+
+function updateNavButtons(activeIndex) {
+  const prevIndex = (activeIndex - 1 + totalSlides) % totalSlides;
+  prevBtn.disabled = prevIndex === firstDisabledIndex;
+  prevBtn.style.opacity = prevBtn.disabled ? 0.5 : 1;
+  prevBtn.style.cursor = prevBtn.disabled ? 'not-allowed' : 'pointer';
+
+  const nextIndex = (activeIndex + 1) % totalSlides;
+  nextBtn.disabled = nextIndex === lastDisabledIndex;
+  nextBtn.style.opacity = nextBtn.disabled ? 0.5 : 1;
+  nextBtn.style.cursor = nextBtn.disabled ? 'not-allowed' : 'pointer';
+}
+
+function updateDragDirection(index) {
+  allowDragLeft = index !== 1;   // index 1 (2nd slide) → no left
+  allowDragRight = index !== 14; // index 14 → no right
+}
+
+nextBtn.addEventListener('click', () => {
+  if (!nextBtn.disabled) swiper.slideNext();
+});
+prevBtn.addEventListener('click', () => {
+  if (!prevBtn.disabled) swiper.slidePrev();
+});
+
+let startX = 0;
+let isDragging = false;
+let lockSlide = false;
+
+const paginationContainer = document.querySelector('.custom-pagination');
+
+paginationContainer.addEventListener('mousedown', (e) => {
+  startX = e.clientX;
+  isDragging = true;
+});
+document.addEventListener('mousemove', (e) => {
+  if (!isDragging || lockSlide) return;
+
+  const diff = e.clientX - startX;
+  if (Math.abs(diff) > 50) {
+    if (diff < 0 && allowDragRight) {
+      lockSlide = true;
+      swiper.slideNext();
+    } else if (diff > 0 && allowDragLeft) {
+      lockSlide = true;
+      swiper.slidePrev();
+    }
+    setTimeout(() => (lockSlide = false), 400);
+    startX = e.clientX;
+  }
+});
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  lockSlide = false;
+});
+
+paginationContainer.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+paginationContainer.addEventListener('touchmove', (e) => {
+  if (!isDragging || lockSlide) return;
+
+  const diff = e.touches[0].clientX - startX;
+  if (Math.abs(diff) > 50) {
+    if (diff < 0 && allowDragRight) {
+      lockSlide = true;
+      swiper.slideNext();
+    } else if (diff > 0 && allowDragLeft) {
+      lockSlide = true;
+      swiper.slidePrev();
+    }
+    setTimeout(() => (lockSlide = false), 400);
+    startX = e.touches[0].clientX;
+  }
+});
+paginationContainer.addEventListener('touchend', () => {
+  isDragging = false;
+  lockSlide = false;
+});
+
+// ----------------------------------------------------------------------------------------------------------------------
+
+
+
+

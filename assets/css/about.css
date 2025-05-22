@@ -78,6 +78,7 @@
 }
 .our-journey-content{
     padding: 4rem 8%;
+    position: relative;
 }
 .our-journey-content h1{
     font-weight: 600;
@@ -105,7 +106,7 @@
 }
 .timeline-slide .timeline-content h2{
     font-weight: 800;
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2.1rem + 1vw);
 }
 .timeline-slide .timeline-content h3{
     font-size: calc(0.9rem + 1vw);
@@ -151,101 +152,221 @@
 .timeline-slide-btns button span{
     margin-top: -7px;
 }
-/* controller */
-.timeline-controller{
+/* timeline track */
+.timeline-track{
     background: linear-gradient(to right, transparent, #fff 20%, #fff 80%, transparent);
     height: 3px;
-    width: 35%;
+    width: 38%;
     margin: 0 auto;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-}
-.timeline-balls-wrapper{
-    /* display: flex; */
-    /* align-items: center; */
-    /* gap: 5.3rem; */
-    padding: 4rem 0;
-    overflow-x: hidden;
-    position: relative;
-    width: 100%;
-    /* background-color: red; */
+    margin-top: 3rem;
 }
 /* timeline balls */
-.timeline-ball{
-    transition: all 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pagination-wrapper {
+    width: 291px;
+    overflow: hidden;
+    margin: 0 auto;
     position: absolute;
-    bottom: 3.5rem;
+    bottom: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4rem 0 2rem 1rem;
 }
-.timeline-ball img{
-    width: 15px;
-    cursor: pointer;
+.custom-pagination {
+    display: flex;
+    gap: 100px;
+    transition: transform 0.5s ease;
 }
-.timeline-ball.active img{
-    width: 30px;
-    border: 2px solid #fff;
+.pagination-dot {
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
     border-radius: 50%;
-    padding: 2px;
-    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
 }
-.timeline-ball.active{
-    pointer-events: none;
-    bottom: 3rem;
+.pagination-dot.active {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    transform: scale(1.2);
+    margin-top: -4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #1e1e1e, 0 0 0 3.5px #fff;
 }
-.timeline-ball p{
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 0.5rem;
-    transition: all 0.5s ease;
+.pagination-dot span {
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-top: -60px;
+    user-select: none;
 }
-.timeline-ball.active p{
-    font-size: calc(1.1rem + 0.5vw);
+.pagination-dot.active span {
+    margin-top: -85px;
 }
-#ball-1{
-    pointer-events: none;
-    left: 5rem;
+.pagination-dot:first-child span,
+.pagination-dot:last-child span {
+    display: none;
 }
-#ball-1 p{
-    color: transparent;
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+   .our-journey-content h1{
+        font-size: calc(1.4rem + 1vw);
+    }
+    .timeline-slide .timeline-image img{
+        border: 3.5px solid #fff;
+    }
+    .timeline-slide .timeline-content h2{
+        font-size: calc(2.4rem + 1vw);
+    }
+    .timeline-slide .timeline-content h3{
+        font-size: calc(1.1rem + 1vw);
+        margin-top: 1.2rem;
+    }
+    .timeline-slide .timeline-content p{
+        margin-top: 1.4rem;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+
+    .timeline-slide-btns{
+        gap: 0.35rem;
+        padding: 1.9rem 0;
+    }
+    .timeline-slide-btns i{
+        font-size: calc(0.3rem + 0.5vw);
+    }
+    .timeline-slide-btns button{
+        font-size: calc(1.65rem + 0.5vw);
+        gap: 2.5px;
+    }
+    .timeline-slide-btns button i{
+        font-size: calc(0.02rem + 0.4vw);
+    }
+    .timeline-slide-btns button span{
+        margin-top: -6px;
+    }
+
+    .timeline-track{
+        width: 35.5%;
+    }
 }
-#ball-2{
-    left: 10rem;
-}
-#ball-3{
-    left: 15rem;
-}
-#ball-4{
-    left: 20rem;
-}
-#ball-5{
-    left: 25rem;
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .our-journey-content h1{
+        font-size: calc(1.5rem + 1vw);
+    }
+    .timeline-slide .timeline-image img{
+        border: 4px solid #fff;
+    }
+    .timeline-slide .timeline-content h2{
+        font-size: calc(2.7rem + 1vw);
+    }
+    .timeline-slide .timeline-content h3{
+        font-size: calc(1.23rem + 1vw);
+        margin-top: 1.3rem;
+    }
+    .timeline-slide .timeline-content p{
+        margin-top: 1.5rem;
+        font-size: calc(0.65rem + 0.5vw);
+    }
+
+    .timeline-slide-btns{
+        gap: 0.4rem;
+        padding: 2.15rem 0 3.5rem 0;
+    }
+    .timeline-slide-btns i{
+        font-size: calc(0.3rem + 0.5vw);
+    }
+    .timeline-slide-btns button{
+        font-size: calc(1.7rem + 0.5vw);
+        gap: 2.7px;
+    }
+    .timeline-slide-btns button i{
+        font-size: calc(0.025rem + 0.4vw);
+    }
+    .timeline-slide-btns button span{
+        margin-top: -7px;
+    }
+
+    .timeline-track{
+        width: 35%;
+    }
 }
 /* Our Journey End */
 
-/* ---- */
-/* .controller {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+/* Brand Story Start */
+.brand-story{
+    background-image: url('../images/brand-story-bg.png');
+    background-size: cover;
 }
-.balls {
-  display: flex;
-  gap: 10px;
+.brand-story-content{
+    padding: 4rem 8% 5rem 8%;
 }
-.ball {
-  width: 15px;
-  height: 15px;
-  background-color: #999;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.brand-story-content h1{
+    color: #0e557e;
+    font-weight: 600;
+    font-size: calc(1.4rem + 1vw);
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
-.ball.active {
-  background-color: #fff;
-} */
-/* ---- */
+.brand-story-content p{
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+   .brand-story-content h1{
+        font-size: calc(1.5rem + 1vw);
+        margin-bottom: 2rem;
+    }
+    .brand-story-content p{
+        font-size: calc(0.58rem + 0.5vw);
+        margin-top: 1.5rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .brand-story-content{
+        padding: 4.5rem 8% 6rem 8%;
+    }
+   .brand-story-content h1{
+        font-size: calc(1.6rem + 1vw);
+        margin-bottom: 2.5rem;
+    }
+    .brand-story-content p{
+        font-size: calc(0.63rem + 0.5vw);
+        margin-top: 2rem;
+    }
+}
+/* Brand Story End */
+
+/* Chairman Start */
+.chairman{
+    margin-top: 0;
+}
+/* Rest styles are coming from Home Page Chairman Message Section (style.css) */
+/* Chairman End */
+
+
+
+
+
+
+
+
+
