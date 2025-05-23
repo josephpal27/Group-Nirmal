@@ -362,6 +362,91 @@
 /* Rest styles are coming from Home Page Chairman Message Section (style.css) */
 /* Chairman End */
 
+/* Vision Mission Start */
+.vision-mission{
+    padding: 6.5rem 8% 4rem 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.vision-mission-card{
+    width: 46%;
+    background-color: #194b71;
+    padding: 8rem 2.7rem 2rem 2.7rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.vision-mission-card .card-img{
+    position: absolute;
+    background-color: #d9d9d9;
+    padding: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0.7rem solid #fff;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.vision-mission-card img{
+    width: 100%;
+}
+.vision-mission-card h1{
+    font-weight: 600;
+    font-size: calc(1.3rem + 1vw);
+}
+.vision-mission-card h2{
+    font-size: calc(0.8rem + 0.5vw);
+    margin: 2rem 0;
+}
+.vision-mission-card p{
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+   .vision-mission{
+        padding: 7rem 8% 4.5rem 8%;
+    }
+    .vision-mission-card{
+        padding: 8rem 3.4rem 2rem 3.4rem;
+    }
+    .vision-mission-card h1{
+        font-size: calc(1.4rem + 1vw);
+    }
+    .vision-mission-card h2{
+        font-size: calc(0.9rem + 0.5vw);
+        margin: 2.2rem 0;
+    }
+    .vision-mission-card p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .vision-mission{
+        padding: 7.8rem 8% 5.5rem 8%;
+    }
+    .vision-mission-card{
+        padding: 8.8rem 3.8rem 2rem 3.8rem;
+    }
+    .vision-mission-card h1{
+        font-size: calc(1.5rem + 1vw);
+    }
+    .vision-mission-card h2{
+        font-size: calc(0.93rem + 0.5vw);
+        margin: 2.3rem 0;
+    }
+    .vision-mission-card p{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+}
+/* Vision Mission End */
+
 
 
 
