@@ -193,66 +193,6 @@
 }
 /* Features End */
 
-/* Features New Start */
-.features-new{
-    padding: 4rem 8% 2rem 8%;
-}
-.features-new h1{
-    font-size: calc(1.9rem + 0.5vw);
-    font-weight: 700;
-    text-align: center;
-    color: #386d94;
-}
-.feature-card-row{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.7%;
-    margin-top: 2rem;
-}
-.feature-card-row .feature-card{
-    width: 23.7%;
-    border: 1.5px solid #e3e9ee !important;
-    border-radius: 8px;
-    padding: 0 0.5rem;
-    margin-bottom: 1.1rem;
-    overflow: hidden;
-}
-.feature-card-row .feature-card:hover{
-    background-color: #f9f9f9;
-}
-.feature-card-row .feature-card .card-img img{
-    width: 40%;
-}
-.feature-card-row .feature-card .card-img h2{
-    font-size: calc(0.75rem + 0.5vw);
-    font-weight: 700;
-    color: #194b71;
-    text-transform: uppercase;
-}
-.feature-card-row .feature-card .card-img p{
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: 500;
-    color: #000;
-    margin-top: 0.8rem;
-}
-
-/* For 110% in 15 inch screens */
-@media screen and (min-width: 1230px) and (max-width: 1399px){
-    .feature-card-row .feature-card{
-        margin-bottom: 1.3rem;
-    }
-}
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-     .feature-card-row .feature-card{
-        border: 1.8px solid #e3e9ee !important;
-        margin-bottom: 1.45rem;
-    }
-}
-/* Features New End */
-
 /* Applications Start */
 .apps{
     padding: 1.8rem 8% 3rem 8%;
