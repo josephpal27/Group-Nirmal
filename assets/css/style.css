@@ -676,7 +676,6 @@ nav{
 }
 .contact-us .contact-us-content p{
     font-size: calc(0.5rem + 0.5vw);
-    width: 55%;
     text-align: center;
     margin-top: 1rem;
 }
