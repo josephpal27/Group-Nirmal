@@ -81,7 +81,7 @@
 
 /* Features Start */
 .features{
-    padding: 2.5rem 8%;
+    padding: 3.5rem 8%;
 }
 .features h1{
     font-size: calc(1.9rem + 0.5vw);
@@ -195,7 +195,7 @@
 
 /* Applications Start */
 .apps{
-    padding: 1.5rem 8%;
+    padding: 1.8rem 8% 3rem 8%;
 }
 .apps h1{
     font-size: calc(1.9rem + 0.5vw);
@@ -249,12 +249,12 @@
 }
 .apps button{
     background-color: #366d96;
-    padding: 0.65rem 1.4rem;
+    padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 8px;
     margin: 0 auto;
     display: block;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: calc(0.7rem + 0.5vw);
     font-weight: 500;
     color: #fff;
     transition: all 0.2s ease-in-out;
@@ -276,7 +276,7 @@
 
 /* Quality Start */
 .quality{
-    margin: 1.2rem 8%;
+    margin: 1.2rem 8% 2rem 8%;
 }
 .quality h1{
     font-size: calc(1.9rem + 0.5vw);
@@ -427,7 +427,7 @@
 
 /* After Sale New Start */
 .after-sale-new{
-    margin: 3rem 8%;
+    margin: 5.5rem 8% 4rem 8%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -483,8 +483,8 @@
 .after-sale-left button{
     background-color: #366d96;
     color: #fff;
-    padding: 0.65rem 1.3rem;
-    font-size: calc(0.5rem + 0.5vw);
+    padding: 0.7rem 1.5rem;
+    font-size: calc(0.7rem + 0.5vw);
     font-weight: 500;
     border: none;
     border-radius: 8px;
@@ -530,7 +530,7 @@
 
 /* Sets Apart Start */
 .sets-apart{
-    padding: 1rem 8%;
+    padding: 1.2rem 8% 2.5rem 8%;
     text-align: center;
 }
 .sets-apart h1{
@@ -630,7 +630,7 @@
 .get-in-touch{
     background-image: url(../images/get-in-touch-bg.png);
     background-size: cover;
-    padding: 4rem 0;
+    padding: 5rem 0;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
@@ -708,7 +708,7 @@
 /* For 110% in 15 inch screens */
 @media screen and (min-width: 1230px) and (max-width: 1399px){
     .get-in-touch{
-        padding: 4.5rem 0;
+        padding: 4.8rem 0;
         margin-top: 3.5rem;
     }
     .get-in-touch-form input{
@@ -728,7 +728,7 @@
 /* For 100% in 15 inch screens */
 @media screen and (min-width: 1400px) {
     .get-in-touch{
-        padding: 5rem 0;
+        padding: 6rem 0;
         margin-top: 4rem;
     }
     .get-in-touch-form input{
@@ -748,7 +748,7 @@
 
 /* FAQ Start */
 .faq{
-    padding: 3.5rem 8% 4.5rem 8%;
+    padding: 4.5rem 8% 5.5rem 8%;
 }
 .faq h1{
     font-size: calc(1.9rem + 0.5vw);
@@ -775,7 +775,7 @@
   font-weight: 700;
   color: #000;
   font-size: calc(0.7rem + 0.5vw);
-  padding: 1.3rem 1.5rem;
+  padding: 1.3rem 2rem 1.3rem 1.5rem;
 }
 .faq .accordion-button:not(.collapsed) {
   background-color: transparent !important;
@@ -787,7 +787,7 @@
   font-size: calc(0.5rem + 0.5vw);
   font-weight: 500;
   color: #707070;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 4rem 1.5rem 1.5rem;
   border-bottom: 1px solid #e3e9ee;
 }
 /* FAQ End */
