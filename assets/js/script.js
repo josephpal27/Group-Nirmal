@@ -110,3 +110,27 @@ document.addEventListener('click', (event) => {
 });
 
 // ----------------------------------------------------------------------------------------------------
+
+// Functionality For Internal Product Pages Contact Form Phone Input Flags Selector
+const phoneInput = document.querySelector(".get-in-touch-form #phone");
+const iti = window.intlTelInput(phoneInput, {
+    initialCountry: "in",
+    separateDialCode: true,
+    preferredCountries: ["in", "us", "gb", "au"],
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
+});
+
+document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const fullNumber = iti.getNumber();
+    alert("Submitted phone: " + fullNumber);
+});
+
+phoneInput.addEventListener('input', function () {
+    // Remove all non-digit characters and limit to 10 digits
+    this.value = this.value.replace(/\D/g, '').slice(0, 10);
+});
+
+phoneInput.placeholder = "";
+
+// ----------------------------------------------------------------------------------------------------

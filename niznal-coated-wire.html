@@ -633,28 +633,6 @@
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"></script>
 
-    <script>
-    const phoneInput = document.querySelector("#phone");
-    const iti = window.intlTelInput(phoneInput, {
-        initialCountry: "in",
-        separateDialCode: true,
-        preferredCountries: ["in", "us", "gb", "au"],
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
-    });
-
-    document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const fullNumber = iti.getNumber();
-        alert("Submitted phone: " + fullNumber);
-    });
-
-    phoneInput.addEventListener('input', function () {
-        // Remove all non-digit characters and limit to 10 digits
-        this.value = this.value.replace(/\D/g, '').slice(0, 10);
-    });
-
-    phoneInput.placeholder = "";
-    </script>
 
     <!-- Lenis Scroll Link -->
     <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
