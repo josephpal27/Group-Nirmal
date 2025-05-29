@@ -216,7 +216,6 @@
     height: 33vh;
     border-radius: 10px;
     overflow: hidden;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 3.8px; */
     box-shadow: rgba(0, 0, 0, 0.219) 0px 3px 6px, rgba(0, 0, 0, 0.247) 0px 3px 6px;
     margin-bottom: 2rem;
     position: relative;
@@ -361,72 +360,6 @@
 
 /* After Sale Start */
 .after-sale{
-    margin: 2.5rem 8% 3rem 8%;
-}
-.after-sale h1{
-    font-size: calc(1.9rem + 0.5vw);
-    font-weight: 700;
-    text-align: center;
-    color: #386d94;
-}
-.after-sale p{
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: 500;
-    color: #000;
-    margin: 0.8rem auto;
-    width: 100%;
-    text-align: center;
-}
-.after-sale-card-row{
-    display: flex;
-    margin-top: 2rem;
-}
-.after-sale-card-row .after-sale-card{
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0 2rem;
-}
-.after-sale-card-row .after-sale-card:nth-child(1){
-    border-right: 0.2rem solid #386d94;
-}
-.after-sale-card-row .after-sale-card img{
-    width: 55px;
-}
-.after-sale-card-row #after-sale-card-2 img{
-    width: 40px;
-}
-.after-sale-card-row .after-sale-card h2{
-    font-size: calc(0.75rem + 0.5vw);
-    font-weight: 700;
-    color: #194b71;
-    text-transform: uppercase;
-    margin-top: 1.5rem;
-}
-.after-sale-card-row .after-sale-card p{
-    font-size: calc(0.5rem + 0.5vw);
-    font-weight: 500;
-    color: #000;
-    text-align: center;
-    margin-top: 0.3rem;
-}
-
-/* For 100% in 15 inch screens */
-@media screen and (min-width: 1400px) {
-    .after-sale-card-row .after-sale-card img{
-        width: 59px;
-    }
-    .after-sale-card-row #after-sale-card-2 img{
-        width: 44px;
-    }
-}
-/* After Sale End */
-
-/* After Sale New Start */
-.after-sale-new{
     margin: 5.5rem 8% 4rem 8%;
     display: flex;
     justify-content: space-between;
@@ -526,7 +459,7 @@
         width: 44px;
     }
 }
-/* After Sale New End */
+/* After Sale End */
 
 /* Sets Apart Start */
 .sets-apart{
